@@ -1,255 +1,239 @@
 <svg width="800" height="570" viewBox="0 0 800 570" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <style>
-    .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; }
-    .orb  { font-family: 'Orbitron', 'Share Tech Mono', monospace; }
+    .mono { font-family: 'Courier New', Courier, monospace; }
 
-    /* ── Bar fill ── */
-    @keyframes bar { 0% { width: 0px; } }
-    @keyframes fadeUp {
-      0%   { opacity: 0; transform: translateY(6px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes headerGlow {
-      0%,100% { opacity: 0.7; }
-      50%      { opacity: 1; }
-    }
-    @keyframes rowHover {
-      0%   { fill-opacity: 0; }
-      100% { fill-opacity: 1; }
-    }
-    @keyframes hazscroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-20px); }
-    }
+    @keyframes hazscroll { from { transform: translateX(0); } to { transform: translateX(-20px); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes bar { from { width: 0; } }
 
-    /* bars — red S tier */
-    .b-java  { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 0.3s both; width: 180px; }
-    .b-node  { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 0.45s both; width: 176px; }
-    .b-nest  { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 0.6s both;  width: 160px; }
-    .b-py    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 0.75s both; width: 140px; }
-    .b-php   { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 0.9s both;  width: 120px; }
-    .b-react { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.0s both;  width: 174px; }
-    .b-ts    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.1s both;  width: 164px; }
-    .b-js    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.2s both;  width: 170px; }
-    .b-html  { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.3s both;  width: 168px; }
-    .b-css   { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.4s both;  width: 156px; }
-    .b-rn    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.5s both;  width: 150px; }
-    .b-pg    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.6s both;  width: 172px; }
-    .b-git   { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.7s both;  width: 184px; }
-    .b-my    { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.8s both;  width: 156px; }
+    .haz { animation: hazscroll 0.5s linear infinite; }
 
-    /* row fade in */
-    .r0  { animation: fadeUp 0.5s ease 0.2s  both; }
-    .r1  { animation: fadeUp 0.5s ease 0.35s both; }
-    .r2  { animation: fadeUp 0.5s ease 0.5s  both; }
-    .r3  { animation: fadeUp 0.5s ease 0.65s both; }
-    .r4  { animation: fadeUp 0.5s ease 0.8s  both; }
-    .r5  { animation: fadeUp 0.5s ease 0.95s both; }
-    .r6  { animation: fadeUp 0.5s ease 1.1s  both; }
-    .r7  { animation: fadeUp 0.5s ease 1.25s both; }
-    .r8  { animation: fadeUp 0.5s ease 1.4s  both; }
-    .r9  { animation: fadeUp 0.5s ease 1.55s both; }
-    .r10 { animation: fadeUp 0.5s ease 1.7s  both; }
-    .r11 { animation: fadeUp 0.5s ease 1.85s both; }
-    .r12 { animation: fadeUp 0.5s ease 2.0s  both; }
-    .r13 { animation: fadeUp 0.5s ease 2.15s both; }
+    /* Row fade-ins */
+    .r0  { animation: fadeUp .5s ease .10s both; }
+    .r1  { animation: fadeUp .5s ease .20s both; }
+    .r2  { animation: fadeUp .5s ease .30s both; }
+    .r3  { animation: fadeUp .5s ease .40s both; }
+    .r4  { animation: fadeUp .5s ease .50s both; }
+    .r5  { animation: fadeUp .5s ease .60s both; }
+    .r6  { animation: fadeUp .5s ease .70s both; }
+    .r7  { animation: fadeUp .5s ease .80s both; }
+    .r8  { animation: fadeUp .5s ease .90s both; }
+    .r9  { animation: fadeUp .5s ease 1.00s both; }
+    .r10 { animation: fadeUp .5s ease 1.10s both; }
+    .r11 { animation: fadeUp .5s ease 1.20s both; }
+    .r12 { animation: fadeUp .5s ease 1.30s both; }
+    .r13 { animation: fadeUp .5s ease 1.40s both; }
 
-    .sec-title { animation: fadeUp 0.5s ease 0.1s both; }
-    .haz { animation: hazscroll 0.6s linear infinite; }
+    /* Bar animations — each named */
+    .bj  { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .25s both; width: 180px; }
+    .bno { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .35s both; width: 176px; }
+    .bne { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .45s both; width: 160px; }
+    .bpy { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .55s both; width: 140px; }
+    .bph { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .65s both; width: 120px; }
+    .bre { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .75s both; width: 174px; }
+    .bts { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .85s both; width: 164px; }
+    .bjs { animation: bar 1.2s cubic-bezier(.4,0,.2,1) .95s both; width: 170px; }
+    .bht { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.05s both; width: 168px; }
+    .brn { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.15s both; width: 150px; }
+    .bpg { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.25s both; width: 172px; }
+    .bgi { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.35s both; width: 184px; }
+    .bmy { animation: bar 1.2s cubic-bezier(.4,0,.2,1) 1.45s both; width: 156px; }
   </style>
 
   <pattern id="hz" x="0" y="0" width="20" height="3" patternUnits="userSpaceOnUse">
     <rect x="0"  y="0" width="12" height="3" fill="#C8001A"/>
     <rect x="12" y="0" width="8"  height="3" fill="#06080a"/>
   </pattern>
+  <linearGradient id="gr" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#C8001A"/>
+    <stop offset="100%" stop-color="#ff2244"/>
+  </linearGradient>
+  <linearGradient id="gb" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#3366ff"/>
+    <stop offset="100%" stop-color="#4488ff"/>
+  </linearGradient>
 </defs>
 
-<!-- BG -->
 <rect width="800" height="570" fill="#06080a"/>
-
-<!-- subtle grid -->
 <line x1="0" y1="55"  x2="800" y2="55"  stroke="#0d1014" stroke-width="1"/>
-<line x1="0" y1="260" x2="800" y2="260" stroke="#0d1014" stroke-width="1"/>
-<line x1="0" y1="430" x2="800" y2="430" stroke="#0d1014" stroke-width="1"/>
+<line x1="0" y1="262" x2="800" y2="262" stroke="#0d1014" stroke-width="1"/>
+<line x1="0" y1="432" x2="800" y2="432" stroke="#0d1014" stroke-width="1"/>
 
-<!-- hazard strip top -->
-<g class="haz"><rect x="-20" y="0" width="840" height="3" fill="url(#hz)"/></g>
+<!-- hazard strips -->
+<g class="haz"><rect x="-20" y="0"   width="840" height="3" fill="url(#hz)"/></g>
 <g class="haz"><rect x="-20" y="567" width="840" height="3" fill="url(#hz)"/></g>
 
-<!-- Section title -->
-<g class="sec-title">
-  <text x="32" y="30" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// INVENTARIO</text>
-  <text x="140" y="30" class="mono" font-size="10" fill="#3a5060" letter-spacing="2">— TECH STACK</text>
-  <line x1="32" y1="38" x2="768" y2="38" stroke="#1a2028" stroke-width="1"/>
-  <!-- Tier legend -->
-  <text x="580" y="30" class="mono" font-size="8" fill="#00ff9d">S</text>
-  <text x="592" y="30" class="mono" font-size="8" fill="#3a5060">= Maestría &nbsp;</text>
-  <text x="660" y="30" class="mono" font-size="8" fill="#4488ff">A</text>
-  <text x="672" y="30" class="mono" font-size="8" fill="#3a5060">= Avanzado</text>
+<!-- ── HEADER ── -->
+<g class="r0">
+  <text x="32" y="28" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// INVENTARIO</text>
+  <text x="138" y="28" class="mono" font-size="10" fill="#2a3840" letter-spacing="2">— TECH STACK</text>
+  <line x1="32" y1="36" x2="768" y2="36" stroke="#1a2028" stroke-width="1"/>
+  <text x="570" y="28" class="mono" font-size="8" fill="#00ff9d">S</text>
+  <text x="582" y="28" class="mono" font-size="8" fill="#2a3840"> Maestría  </text>
+  <text x="644" y="28" class="mono" font-size="8" fill="#4488ff">A</text>
+  <text x="656" y="28" class="mono" font-size="8" fill="#2a3840"> Avanzado  </text>
+  <text x="726" y="28" class="mono" font-size="8" fill="#3a5060">B</text>
+  <text x="738" y="28" class="mono" font-size="8" fill="#2a3840"> Básico</text>
 </g>
 
 <!-- ══ BACKEND ══ -->
 <g class="r0">
-  <rect x="32" y="46" width="100" height="16" fill="#1a0005" stroke="#C8001A" stroke-width="0.5"/>
-  <text x="82" y="54" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#C8001A" letter-spacing="2">BACKEND</text>
+  <rect x="32" y="44" width="100" height="16" fill="#140005" stroke="#C8001A" stroke-width="0.8"/>
+  <text x="82" y="52" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#C8001A" letter-spacing="2">BACKEND</text>
 </g>
-
-<!-- Col headers -->
+<!-- Headers -->
 <g class="r0">
-  <text x="56"  y="76" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">MÓDULO</text>
-  <text x="220" y="76" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">TIER</text>
-  <text x="265" y="76" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">NIVEL</text>
-  <text x="490" y="76" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">%</text>
-  <line x1="32" y1="82" x2="560" y2="82" stroke="#1a2028" stroke-width="0.5"/>
+  <text x="56"  y="74" class="mono" font-size="8" fill="#2a3840" letter-spacing="1">MÓDULO</text>
+  <text x="220" y="74" class="mono" font-size="8" fill="#2a3840" letter-spacing="1">TIER</text>
+  <text x="262" y="74" class="mono" font-size="8" fill="#2a3840" letter-spacing="1">NIVEL</text>
+  <line x1="32" y1="80" x2="560" y2="80" stroke="#1a2028" stroke-width="0.5"/>
 </g>
 
 <!-- JAVA -->
 <g class="r1">
-  <rect x="32" y="84" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="84" width="3"   height="30" fill="#C8001A"/>
-  <text x="56"  y="99" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Java</text>
-  <text x="226" y="99" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">S</text>
-  <rect x="260" y="92" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-java"  x="260" y="92" width="0" height="8" fill="#C8001A" rx="1"/>
-  <text x="470" y="99" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">90%</text>
+  <rect x="32" y="82" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="82" width="3"   height="30" fill="#C8001A"/>
+  <text x="56"  y="97" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Java</text>
+  <text x="225" y="97" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d" font-weight="bold">S</text>
+  <rect x="258" y="90" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bj"  x="258" y="90" width="0" height="8" fill="url(#gr)" rx="1"/>
+  <text x="465" y="97" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">90%</text>
 </g>
 <!-- NODE -->
 <g class="r2">
-  <rect x="32" y="114" width="528" height="30" fill="#06080a"/>
-  <rect x="32" y="114" width="3"   height="30" fill="#C8001A"/>
-  <text x="56"  y="129" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Node.js</text>
-  <text x="226" y="129" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">S</text>
-  <rect x="260" y="122" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-node"  x="260" y="122" width="0" height="8" fill="#C8001A" rx="1"/>
-  <text x="470" y="129" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">88%</text>
+  <rect x="32" y="112" width="528" height="30" fill="#06080a"/>
+  <rect x="32" y="112" width="3"   height="30" fill="#C8001A"/>
+  <text x="56"  y="127" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Node.js</text>
+  <text x="225" y="127" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d" font-weight="bold">S</text>
+  <rect x="258" y="120" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bno" x="258" y="120" width="0" height="8" fill="url(#gr)" rx="1"/>
+  <text x="465" y="127" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">88%</text>
 </g>
 <!-- NESTJS -->
 <g class="r3">
-  <rect x="32" y="144" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="144" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="159" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">NestJS</text>
-  <text x="226" y="159" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="152" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-nest"  x="260" y="152" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="159" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">80%</text>
+  <rect x="32" y="142" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="142" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="157" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">NestJS</text>
+  <text x="225" y="157" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="150" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bne" x="258" y="150" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="157" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">80%</text>
 </g>
 <!-- PYTHON -->
 <g class="r4">
-  <rect x="32" y="174" width="528" height="30" fill="#06080a"/>
-  <rect x="32" y="174" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="189" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Python</text>
-  <text x="226" y="189" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="182" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-py"    x="260" y="182" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="189" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">70%</text>
+  <rect x="32" y="172" width="528" height="30" fill="#06080a"/>
+  <rect x="32" y="172" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="187" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Python</text>
+  <text x="225" y="187" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="180" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bpy" x="258" y="180" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="187" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">70%</text>
 </g>
 <!-- PHP -->
 <g class="r5">
-  <rect x="32" y="204" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="204" width="3"   height="30" fill="#3a5060"/>
-  <text x="56"  y="219" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">PHP</text>
-  <text x="226" y="219" dominant-baseline="central" class="mono" font-size="12" fill="#6a8090">B</text>
-  <rect x="260" y="212" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-php"   x="260" y="212" width="0" height="8" fill="#3a5060" rx="1"/>
-  <text x="470" y="219" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">60%</text>
+  <rect x="32" y="202" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="202" width="3"   height="30" fill="#3a5060"/>
+  <text x="56"  y="217" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">PHP</text>
+  <text x="225" y="217" dominant-baseline="central" class="mono" font-size="11" fill="#6a8090" font-weight="bold">B</text>
+  <rect x="258" y="210" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bph" x="258" y="210" width="0" height="8" fill="#3a5060" rx="1"/>
+  <text x="465" y="217" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">60%</text>
 </g>
 
-<line x1="32" y1="242" x2="560" y2="242" stroke="#1a2028" stroke-width="1"/>
+<line x1="32" y1="240" x2="560" y2="240" stroke="#1a2028" stroke-width="1"/>
 
 <!-- ══ FRONTEND ══ -->
 <g class="r6">
-  <rect x="32" y="250" width="100" height="16" fill="#001a0d" stroke="#00ff9d" stroke-width="0.5"/>
-  <text x="82" y="258" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#00ff9d" letter-spacing="2">FRONTEND</text>
+  <rect x="32" y="248" width="100" height="16" fill="#001a0d" stroke="#00ff9d" stroke-width="0.8"/>
+  <text x="82" y="256" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#00ff9d" letter-spacing="2">FRONTEND</text>
 </g>
-
 <!-- REACT -->
 <g class="r6">
-  <rect x="32" y="274" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="274" width="3"   height="30" fill="#C8001A"/>
-  <text x="56"  y="289" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">React</text>
-  <text x="226" y="289" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">S</text>
-  <rect x="260" y="282" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-react" x="260" y="282" width="0" height="8" fill="#C8001A" rx="1"/>
-  <text x="470" y="289" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">87%</text>
+  <rect x="32" y="272" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="272" width="3"   height="30" fill="#C8001A"/>
+  <text x="56"  y="287" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">React</text>
+  <text x="225" y="287" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d" font-weight="bold">S</text>
+  <rect x="258" y="280" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bre" x="258" y="280" width="0" height="8" fill="url(#gr)" rx="1"/>
+  <text x="465" y="287" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">87%</text>
 </g>
 <!-- TYPESCRIPT -->
 <g class="r7">
-  <rect x="32" y="304" width="528" height="30" fill="#06080a"/>
-  <rect x="32" y="304" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="319" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">TypeScript</text>
-  <text x="226" y="319" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="312" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-ts"    x="260" y="312" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="319" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">82%</text>
+  <rect x="32" y="302" width="528" height="30" fill="#06080a"/>
+  <rect x="32" y="302" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="317" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">TypeScript</text>
+  <text x="225" y="317" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="310" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bts" x="258" y="310" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="317" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">82%</text>
 </g>
 <!-- JS -->
 <g class="r8">
-  <rect x="32" y="334" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="334" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="349" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">JavaScript</text>
-  <text x="226" y="349" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="342" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-js"    x="260" y="342" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="349" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">85%</text>
+  <rect x="32" y="332" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="332" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="347" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">JavaScript</text>
+  <text x="225" y="347" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="340" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bjs" x="258" y="340" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="347" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">85%</text>
 </g>
-<!-- HTML -->
+<!-- HTML/CSS -->
 <g class="r9">
-  <rect x="32" y="364" width="528" height="30" fill="#06080a"/>
-  <rect x="32" y="364" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="379" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">HTML5 / CSS3</text>
-  <text x="226" y="379" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="372" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-html"  x="260" y="372" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="379" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">84%</text>
+  <rect x="32" y="362" width="528" height="30" fill="#06080a"/>
+  <rect x="32" y="362" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="377" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">HTML5 / CSS3</text>
+  <text x="225" y="377" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="370" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bht" x="258" y="370" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="377" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">84%</text>
 </g>
 <!-- REACT NATIVE -->
 <g class="r10">
-  <rect x="32" y="394" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="394" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="409" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">React Native</text>
-  <text x="226" y="409" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="402" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-rn"    x="260" y="402" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="409" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">75%</text>
+  <rect x="32" y="392" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="392" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="407" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">React Native</text>
+  <text x="225" y="407" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="400" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="brn" x="258" y="400" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="407" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">75%</text>
 </g>
 
-<line x1="32" y1="432" x2="560" y2="432" stroke="#1a2028" stroke-width="1"/>
+<line x1="32" y1="430" x2="560" y2="430" stroke="#1a2028" stroke-width="1"/>
 
 <!-- ══ DB & TOOLS ══ -->
 <g class="r11">
-  <rect x="32" y="440" width="130" height="16" fill="#0d1014" stroke="#1a2028" stroke-width="0.5"/>
-  <text x="97" y="448" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#6a8090" letter-spacing="2">DB &amp; HERRAMIENTAS</text>
+  <rect x="32" y="438" width="140" height="16" fill="#0d1014" stroke="#1a2028" stroke-width="0.8"/>
+  <text x="102" y="446" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#4a6070" letter-spacing="2">DB &amp; HERRAMIENTAS</text>
 </g>
-
 <!-- POSTGRESQL -->
 <g class="r11">
-  <rect x="32" y="464" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="464" width="3"   height="30" fill="#C8001A"/>
-  <text x="56"  y="479" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">PostgreSQL</text>
-  <text x="226" y="479" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">S</text>
-  <rect x="260" y="472" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-pg"    x="260" y="472" width="0" height="8" fill="#C8001A" rx="1"/>
-  <text x="470" y="479" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">86%</text>
+  <rect x="32" y="462" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="462" width="3"   height="30" fill="#C8001A"/>
+  <text x="56"  y="477" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">PostgreSQL</text>
+  <text x="225" y="477" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d" font-weight="bold">S</text>
+  <rect x="258" y="470" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bpg" x="258" y="470" width="0" height="8" fill="url(#gr)" rx="1"/>
+  <text x="465" y="477" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">86%</text>
 </g>
 <!-- GIT -->
 <g class="r12">
-  <rect x="32" y="494" width="528" height="30" fill="#06080a"/>
-  <rect x="32" y="494" width="3"   height="30" fill="#C8001A"/>
-  <text x="56"  y="509" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Git / GitHub</text>
-  <text x="226" y="509" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">S</text>
-  <rect x="260" y="502" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-git"   x="260" y="502" width="0" height="8" fill="#C8001A" rx="1"/>
-  <text x="470" y="509" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">92%</text>
+  <rect x="32" y="492" width="528" height="30" fill="#06080a"/>
+  <rect x="32" y="492" width="3"   height="30" fill="#C8001A"/>
+  <text x="56"  y="507" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">Git / GitHub</text>
+  <text x="225" y="507" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d" font-weight="bold">S</text>
+  <rect x="258" y="500" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bgi" x="258" y="500" width="0" height="8" fill="url(#gr)" rx="1"/>
+  <text x="465" y="507" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">92%</text>
 </g>
 <!-- MYSQL -->
 <g class="r13">
-  <rect x="32" y="524" width="528" height="30" fill="#0d1014"/>
-  <rect x="32" y="524" width="3"   height="30" fill="#4488ff"/>
-  <text x="56"  y="539" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">MySQL</text>
-  <text x="226" y="539" dominant-baseline="central" class="mono" font-size="12" fill="#4488ff">A</text>
-  <rect x="260" y="532" width="200" height="8" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b-my"    x="260" y="532" width="0" height="8" fill="#4488ff" rx="1"/>
-  <text x="470" y="539" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">78%</text>
+  <rect x="32" y="522" width="528" height="30" fill="#0d1014"/>
+  <rect x="32" y="522" width="3"   height="30" fill="#4488ff"/>
+  <text x="56"  y="537" dominant-baseline="central" class="mono" font-size="12" fill="#e8f0f4">MySQL</text>
+  <text x="225" y="537" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff" font-weight="bold">A</text>
+  <rect x="258" y="530" width="200" height="8" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="bmy" x="258" y="530" width="0" height="8" fill="url(#gb)" rx="1"/>
+  <text x="465" y="537" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">78%</text>
 </g>
 </svg>
