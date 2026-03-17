@@ -1,211 +1,152 @@
-<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
-<defs>
-  <style>
-    /* Fuentes del sistema — sin @import externo */
-    .mono { font-family: 'Courier New', Courier, monospace; }
-    .orb  { font-family: 'Courier New', Courier, monospace; font-weight: 900; }
+<svg fill="none" width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="800" height="220">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.w{width:800px;height:220px;background:#06080a;font-family:'Courier New',Courier,monospace;color:#b8ccd4;position:relative;overflow:hidden;border-bottom:1px solid #1a2028}
 
-    /* Hazard strip scroll */
-    @keyframes hazscroll {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-20px); }
-    }
-    /* Bar fills */
-    @keyframes fillHP  { from { width: 0; } to { width: 228px; } }
-    @keyframes fillXP  { from { width: 0; } to { width: 192px; } }
-    @keyframes fillPWR { from { width: 0; } to { width: 210px; } }
-    /* Pulse */
-    @keyframes pulse {
-      0%,100% { opacity: 1; }
-      50%      { opacity: 0.2; }
-    }
-    /* Glitch */
-    @keyframes glitch {
-      0%,90%,100% { transform: translate(0,0); fill: #e8f0f4; }
-      91%          { transform: translate(-4px,0); fill: #ff4444; }
-      93%          { transform: translate(4px,0);  fill: #00ff9d; }
-      95%          { transform: translate(0,0);    fill: #e8f0f4; }
-    }
-    /* Corner blink */
-    @keyframes cblink {
-      0%,48%,100% { opacity: 1; }
-      50%,98%     { opacity: 0.1; }
-    }
-    /* Cursor */
-    @keyframes blink {
-      0%,100% { opacity: 1; }
-      50%      { opacity: 0; }
-    }
-    /* Fade up */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(6px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    /* Scan line */
-    @keyframes scan {
-      from { transform: translateY(-220px); }
-      to   { transform: translateY(220px); }
-    }
-    /* Badge glow pulse */
-    @keyframes bglow {
-      0%,100% { opacity: 1; }
-      50%      { opacity: 0.6; }
-    }
+/* HAZARD STRIP */
+@keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
+.top-strip,.bot-strip{height:4px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 4px;animation:hz .5s linear infinite}
+.bot-strip{position:absolute;bottom:0;left:0;right:0}
 
-    .haz       { animation: hazscroll 0.5s linear infinite; }
-    .bar-hp    { animation: fillHP  1.3s cubic-bezier(.4,0,.2,1) 0.5s both; }
-    .bar-xp    { animation: fillXP  1.3s cubic-bezier(.4,0,.2,1) 0.7s both; }
-    .bar-pwr   { animation: fillPWR 1.3s cubic-bezier(.4,0,.2,1) 0.9s both; }
-    .dot       { animation: pulse 1.8s ease-in-out infinite; }
-    .glitch    { animation: glitch 7s ease-in-out infinite; }
-    .cblink    { animation: cblink 2.8s step-end infinite; }
-    .cursor    { animation: blink 1s step-end infinite; }
-    .scan-line { animation: scan 3s linear infinite; }
-    .f0 { animation: fadeUp 0.6s ease 0.1s both; }
-    .f1 { animation: fadeUp 0.6s ease 0.3s both; }
-    .f2 { animation: fadeUp 0.6s ease 0.5s both; }
-    .f3 { animation: fadeUp 0.6s ease 0.7s both; }
-    .f4 { animation: fadeUp 0.6s ease 0.9s both; }
-    .bglow { animation: bglow 2s ease-in-out infinite; }
-  </style>
+/* SCAN LINE */
+@keyframes scan{from{top:-40px}to{top:260px}}
+.scan{position:absolute;left:0;right:0;height:40px;background:linear-gradient(transparent,rgba(255,255,255,.04),transparent);animation:scan 3s linear infinite;pointer-events:none;z-index:10}
 
-  <pattern id="hz" x="0" y="0" width="20" height="4" patternUnits="userSpaceOnUse">
-    <rect x="0"  y="0" width="12" height="4" fill="#C8001A"/>
-    <rect x="12" y="0" width="8"  height="4" fill="#06080a"/>
-  </pattern>
+/* MAIN CONTENT */
+.body{padding:14px 28px 0;position:relative}
+.row1{display:flex;align-items:flex-start;gap:18px;margin-bottom:14px}
 
-  <linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%"   stop-color="white" stop-opacity="0"/>
-    <stop offset="45%"  stop-color="white" stop-opacity="0.05"/>
-    <stop offset="55%"  stop-color="white" stop-opacity="0.05"/>
-    <stop offset="100%" stop-color="white" stop-opacity="0"/>
-  </linearGradient>
+/* MONOGRAM */
+@keyframes cblink{0%,48%,100%{opacity:1}50%,98%{opacity:.1}}
+.mono-box{width:66px;height:66px;flex-shrink:0;border:1.5px solid #C8001A;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#C8001A;position:relative;background:rgba(200,0,26,.03)}
+.mono-box::before,.mono-box::after{content:'';position:absolute;width:10px;height:10px;border-color:#00ff9d;border-style:solid}
+.mono-box::before{top:-1px;left:-1px;border-width:2px 0 0 2px;animation:cblink 2.5s step-end infinite}
+.mono-box::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0;animation:cblink 2.5s step-end infinite .8s}
 
-  <linearGradient id="barHp" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="#00ff9d"/>
-    <stop offset="100%" stop-color="#00cc7a"/>
-  </linearGradient>
-  <linearGradient id="barPwr" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="#C8001A"/>
-    <stop offset="100%" stop-color="#ff2244"/>
-  </linearGradient>
-  <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%"   stop-color="#06080a"/>
-    <stop offset="100%" stop-color="#0a0e12"/>
-  </linearGradient>
-</defs>
+/* NAME */
+@keyframes glitch{0%,91%,100%{transform:translate(0);color:#e8f0f4}92%{transform:translate(-3px,0);color:#ff3344}94%{transform:translate(3px,0);color:#00ff9d}96%{transform:translate(0);color:#e8f0f4}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.name{font-size:26px;font-weight:900;letter-spacing:3px;color:#e8f0f4;animation:glitch 7s ease-in-out infinite;line-height:1}
+.cursor{animation:blink 1s step-end infinite;color:#C8001A;font-size:24px}
+.role{font-size:10px;color:#C8001A;letter-spacing:5px;margin-top:5px}
 
-<!-- ── BACKGROUND ── -->
-<rect width="800" height="220" fill="url(#bgGrad)"/>
+/* BADGES */
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+.badges{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+.badge{font-size:8px;letter-spacing:2px;padding:3px 8px;border:1px solid;display:flex;align-items:center;gap:5px}
+.bg{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.04)}
+.br{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
+.bw{border-color:#1a2028;color:#4a6070}
+.dot{width:5px;height:5px;border-radius:50%;background:#00ff9d;animation:pulse 1.8s ease-in-out infinite}
 
-<!-- Grid lines -->
-<line x1="0" y1="58"  x2="800" y2="58"  stroke="#0d1014" stroke-width="1"/>
-<line x1="0" y1="115" x2="800" y2="115" stroke="#0d1014" stroke-width="1"/>
-<line x1="0" y1="175" x2="800" y2="175" stroke="#0d1014" stroke-width="1"/>
-<line x1="645" y1="0" x2="645" y2="220" stroke="#0d1014" stroke-width="1" stroke-dasharray="3 5"/>
+/* STATUS BOX */
+.status-box{position:absolute;top:14px;right:18px;border:1px solid #1a2028;padding:10px 14px;text-align:center;background:#0d1014;font-size:7px;letter-spacing:2px;color:#2a3840}
+.ring-outer{width:28px;height:28px;border:1.5px solid #1a2028;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 5px}
+.ring-inner{width:20px;height:20px;border:1.5px solid #00ff9d;border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pulse 1.8s ease-in-out infinite}
+.ring-dot{width:7px;height:7px;background:#00ff9d;border-radius:50%}
 
-<!-- Hazard TOP -->
-<g class="haz">
-  <rect x="-20" y="0" width="840" height="4" fill="url(#hz)"/>
-</g>
-<!-- Hazard BOTTOM -->
-<g class="haz">
-  <rect x="-20" y="216" width="840" height="4" fill="url(#hz)"/>
-</g>
+/* VITALS */
+@keyframes fillHP{from{width:0}to{width:92%}}
+@keyframes fillXP{from{width:0}to{width:78%}}
+@keyframes fillPWR{from{width:0}to{width:85%}}
+.vitals{margin-top:2px}
+.vrow{display:flex;align-items:center;gap:8px;font-size:8px;letter-spacing:1px;margin-bottom:5px}
+.vlbl{width:28px;color:#2a3840}
+.vtrack{flex:1;height:6px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:280px}
+.vbar{height:100%;border-radius:1px}
+.vhp{background:linear-gradient(90deg,#00cc7a,#00ff9d);animation:fillHP 1.3s cubic-bezier(.4,0,.2,1) .5s both}
+.vxp{background:linear-gradient(90deg,#00aa60,#00ff9d);animation:fillXP 1.3s cubic-bezier(.4,0,.2,1) .7s both}
+.vpwr{background:linear-gradient(90deg,#900010,#C8001A);animation:fillPWR 1.3s cubic-bezier(.4,0,.2,1) .9s both}
+.vpct{font-size:8px;color:#3a5060;width:28px}
+.vpct.g{color:#00ff9d}.vpct.r{color:#C8001A}
 
-<!-- Scan line overlay -->
-<rect class="scan-line" x="0" y="0" width="800" height="30" fill="url(#scanG)"/>
+/* GRID LINES */
+.grid{position:absolute;inset:0;pointer-events:none}
+.grid-h{position:absolute;left:0;right:0;height:1px;background:#0d1014}
+.grid-v{position:absolute;top:0;bottom:0;width:1px;background:#0d1014;right:158px}
 
-<!-- ── MONOGRAM BOX ── -->
-<g class="f0">
-  <rect x="28" y="26" width="70" height="70" fill="#0d1014" stroke="#C8001A" stroke-width="1.5"/>
-  <rect x="33" y="31" width="60" height="60" fill="none" stroke="#C8001A" stroke-width="0.4" opacity="0.3"/>
-  <!-- Corners TL -->
-  <polyline class="cblink" points="28,26 16,26 16,14 28,14" fill="none" stroke="#00ff9d" stroke-width="2"/>
-  <!-- Corners TR -->
-  <polyline           points="98,26 110,26 110,14 98,14"  fill="none" stroke="#00ff9d" stroke-width="2"/>
-  <!-- Corners BL -->
-  <polyline           points="28,96 16,96 16,108 28,108"  fill="none" stroke="#00ff9d" stroke-width="2"/>
-  <!-- Corners BR -->
-  <polyline class="cblink" points="98,96 110,96 110,108 98,108" fill="none" stroke="#00ff9d" stroke-width="2"/>
-  <text x="63" y="61" text-anchor="middle" dominant-baseline="central" class="orb" font-size="22" letter-spacing="2" fill="#C8001A">DM</text>
-</g>
+/* DECORATIVE DOTS */
+.deco-dots{position:absolute;right:140px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-evenly;padding:10px 0}
+.ddot{width:3px;height:3px;border-radius:50%;background:#1a2028}
+.ddot.red{background:#C8001A}
+</style>
 
-<!-- ── NAME ── -->
-<g class="f1">
-  <text class="glitch" x="124" y="57" class="orb" font-size="30" letter-spacing="4" fill="#e8f0f4">DAVID MENDOZA</text>
-  <text class="cursor" x="568" y="55" class="mono" font-size="28" fill="#C8001A">_</text>
-</g>
+<div class="w">
+  <!-- Grid -->
+  <div class="grid">
+    <div class="grid-h" style="top:58px"></div>
+    <div class="grid-h" style="top:115px"></div>
+    <div class="grid-h" style="top:175px"></div>
+    <div class="grid-v"></div>
+  </div>
 
-<!-- ── ROLE ── -->
-<g class="f2">
-  <text x="126" y="80" class="mono" font-size="11" fill="#C8001A" letter-spacing="5">// FULL STACK DEVELOPER</text>
-</g>
+  <div class="top-strip"></div>
+  <div class="scan"></div>
 
-<!-- ── BADGES ── -->
-<g class="f3">
-  <!-- ONLINE -->
-  <rect x="124" y="92" width="78" height="20" fill="#001a0d" stroke="#00ff9d" stroke-width="1"/>
-  <circle class="dot" cx="137" cy="102" r="4" fill="#00ff9d"/>
-  <text x="148" y="102" dominant-baseline="central" class="mono" font-size="9" fill="#00ff9d" letter-spacing="2">ONLINE</text>
+  <!-- Status panel -->
+  <div class="status-box">
+    <div class="ring-outer">
+      <div class="ring-inner">
+        <div class="ring-dot"></div>
+      </div>
+    </div>
+    ACTIVO
+  </div>
 
-  <!-- DISPONIBLE -->
-  <rect x="210" y="92" width="94" height="20" fill="#1a0005" stroke="#C8001A" stroke-width="1"/>
-  <text x="257" y="102" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">DISPONIBLE</text>
+  <!-- Decorative dots -->
+  <div class="deco-dots">
+    <div class="ddot"></div>
+    <div class="ddot"></div>
+    <div class="ddot"></div>
+    <div class="ddot red"></div>
+    <div class="ddot"></div>
+    <div class="ddot"></div>
+    <div class="ddot"></div>
+  </div>
 
-  <!-- LARA VE -->
-  <rect x="312" y="92" width="78" height="20" fill="#0d1014" stroke="#1a2028" stroke-width="1"/>
-  <text x="351" y="102" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#4a6070" letter-spacing="2">LARA · VE</text>
+  <div class="body">
+    <div class="row1">
+      <!-- Monogram -->
+      <div class="mono-box">DM</div>
 
-  <!-- GRACOSOFT -->
-  <rect x="398" y="92" width="90" height="20" fill="#0d1014" stroke="#1a2028" stroke-width="1"/>
-  <text x="443" y="102" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#4a6070" letter-spacing="2">GRACOSOFT</text>
-</g>
+      <!-- Info -->
+      <div>
+        <div class="name">DAVID MENDOZA<span class="cursor">_</span></div>
+        <div class="role">// FULL STACK DEVELOPER</div>
+        <div class="badges">
+          <span class="badge bg"><span class="dot"></span>ONLINE</span>
+          <span class="badge br">DISPONIBLE</span>
+          <span class="badge bw">LARA · VE</span>
+          <span class="badge bw">GRACOSOFT</span>
+        </div>
+      </div>
+    </div>
 
-<!-- ── VITALS ── -->
-<g class="f4">
-  <text x="124" y="128" class="mono" font-size="8" fill="#2a3840" letter-spacing="3">VITALS ──────────────────────────</text>
+    <!-- Vitals -->
+    <div style="font-size:7px;letter-spacing:3px;color:#1a2028;margin-bottom:6px">VITALS ──────────────────────────────────────</div>
+    <div class="vitals">
+      <div class="vrow">
+        <span class="vlbl">HP</span>
+        <div class="vtrack"><div class="vbar vhp"></div></div>
+        <span class="vpct g">92%</span>
+      </div>
+      <div class="vrow">
+        <span class="vlbl">XP</span>
+        <div class="vtrack"><div class="vbar vxp"></div></div>
+        <span class="vpct g">Lv4</span>
+      </div>
+      <div class="vrow">
+        <span class="vlbl">PWR</span>
+        <div class="vtrack"><div class="vbar vpwr"></div></div>
+        <span class="vpct r">85%</span>
+      </div>
+    </div>
+  </div>
 
-  <!-- HP -->
-  <text x="124" y="148" class="mono" font-size="9" fill="#3a5060">HP</text>
-  <rect x="148" y="142" width="260" height="7" fill="#0a0e12" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="bar-hp"  x="148" y="142" width="0" height="7" fill="url(#barHp)" rx="1"/>
-  <text x="416" y="148" class="mono" font-size="9" fill="#00ff9d">92%</text>
-
-  <!-- XP -->
-  <text x="124" y="167" class="mono" font-size="9" fill="#3a5060">XP</text>
-  <rect x="148" y="161" width="260" height="7" fill="#0a0e12" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="bar-xp"  x="148" y="161" width="0" height="7" fill="url(#barHp)" rx="1"/>
-  <text x="416" y="167" class="mono" font-size="9" fill="#00ff9d">Lv4</text>
-
-  <!-- PWR -->
-  <text x="124" y="186" class="mono" font-size="9" fill="#3a5060">PWR</text>
-  <rect x="148" y="180" width="260" height="7" fill="#0a0e12" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="bar-pwr" x="148" y="180" width="0" height="7" fill="url(#barPwr)" rx="1"/>
-  <text x="416" y="186" class="mono" font-size="9" fill="#C8001A">85%</text>
-</g>
-
-<!-- ── RIGHT STATUS PANEL ── -->
-<g class="f2">
-  <rect x="660" y="26" width="112" height="70" fill="#0d1014" stroke="#1a2028" stroke-width="1"/>
-  <text x="716" y="44" text-anchor="middle" class="mono" font-size="7" fill="#2a3840" letter-spacing="3">STATUS</text>
-  <!-- Outer ring -->
-  <circle cx="716" cy="66" r="16" fill="none" stroke="#1a2028" stroke-width="1"/>
-  <!-- Inner ring pulsing -->
-  <circle class="dot" cx="716" cy="66" r="12" fill="none" stroke="#00ff9d" stroke-width="1.5"/>
-  <!-- Center dot -->
-  <circle cx="716" cy="66" r="5" fill="#00ff9d"/>
-  <circle class="dot" cx="716" cy="66" r="3" fill="#06080a"/>
-  <text x="716" y="85" text-anchor="middle" class="mono" font-size="7" fill="#3a5060" letter-spacing="2">ACTIVO</text>
-</g>
-<!-- Decorative right column dots -->
-<g class="f3">
-  <circle cx="648" cy="60"  r="1.5" fill="#1a2028"/>
-  <circle cx="648" cy="80"  r="1.5" fill="#1a2028"/>
-  <circle cx="648" cy="100" r="1.5" fill="#1a2028"/>
-  <circle cx="648" cy="120" r="1.5" fill="#1a2028"/>
-  <circle cx="648" cy="140" r="1.5" fill="#C8001A"/>
-  <circle cx="648" cy="160" r="1.5" fill="#1a2028"/>
-  <circle cx="648" cy="180" r="1.5" fill="#1a2028"/>
-</g>
+  <div class="bot-strip"></div>
+</div>
+</div>
+</foreignObject>
 </svg>

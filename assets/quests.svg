@@ -1,131 +1,128 @@
-<svg width="800" height="310" viewBox="0 0 800 310" xmlns="http://www.w3.org/2000/svg">
-<defs>
-  <style>
-    .mono { font-family: 'Courier New', Courier, monospace; }
+<svg fill="none" width="800" height="310" viewBox="0 0 800 310" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="800" height="310">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.w{width:800px;height:310px;background:#06080a;font-family:'Courier New',Courier,monospace;color:#b8ccd4;position:relative;overflow:hidden}
 
-    @keyframes hazscroll { from { transform: translateX(0); } to { transform: translateX(-20px); } }
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes bar75 { from { width: 0; } to { width: 150px; } }
-    @keyframes bar55 { from { width: 0; } to { width: 110px; } }
-    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
-    @keyframes iconAmber { 0%,100% { fill: #FFB800; } 50% { fill: #ff7700; } }
-    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
-    @keyframes lineGrow { from { width: 0; } to { width: 736px; } }
+@keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
+.hstrip{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
+.bstrip{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
 
-    .haz    { animation: hazscroll 0.5s linear infinite; }
-    .q0  { animation: fadeUp .5s ease .10s both; }
-    .q1  { animation: fadeUp .5s ease .22s both; }
-    .q2  { animation: fadeUp .5s ease .34s both; }
-    .q3  { animation: fadeUp .5s ease .46s both; }
-    .q4  { animation: fadeUp .5s ease .58s both; }
-    .q5  { animation: fadeUp .5s ease .70s both; }
-    .q6  { animation: fadeUp .5s ease .82s both; }
-    .b75 { animation: bar75 1.2s cubic-bezier(.4,0,.2,1) .6s  both; }
-    .b55 { animation: bar55 1.2s cubic-bezier(.4,0,.2,1) .75s both; }
-    .dot    { animation: pulse 1.8s ease-in-out infinite; }
-    .amber  { animation: iconAmber 1.4s ease-in-out infinite; }
-    .cursor { animation: blink 1s step-end infinite; }
-    .divline { animation: lineGrow .8s ease .1s both; }
-  </style>
-  <pattern id="hz" x="0" y="0" width="20" height="3" patternUnits="userSpaceOnUse">
-    <rect x="0"  y="0" width="12" height="3" fill="#C8001A"/>
-    <rect x="12" y="0" width="8"  height="3" fill="#06080a"/>
-  </pattern>
-  <linearGradient id="bamb" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%"   stop-color="#FFB800"/>
-    <stop offset="100%" stop-color="#ff8800"/>
-  </linearGradient>
-</defs>
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes amber{0%,100%{color:#FFB800}50%{color:#ff6600}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes bar75{from{width:0}to{width:75%}}
+@keyframes bar55{from{width:0}to{width:55%}}
 
-<rect width="800" height="310" fill="#06080a"/>
-<line x1="0" y1="52"  x2="800" y2="52"  stroke="#0d1014" stroke-width="1"/>
-<line x1="0" y1="248" x2="800" y2="248" stroke="#0d1014" stroke-width="1"/>
+.body{padding:12px 28px}
+.sec-hdr{font-size:9px;letter-spacing:3px;color:#C8001A;margin-bottom:4px}
+.sec-hdr span{color:#2a3840}
+.divline{border:none;border-top:1px solid #1a2028;margin-bottom:12px}
 
-<g class="haz"><rect x="-20" y="0"   width="840" height="3" fill="url(#hz)"/></g>
-<g class="haz"><rect x="-20" y="307" width="840" height="3" fill="url(#hz)"/></g>
+.quest{display:flex;align-items:flex-start;gap:12px;padding:9px 14px;border:1px solid #1a2028;border-left:3px solid transparent;margin-bottom:6px;animation:fadeUp .5s ease both}
+.quest.done{border-left-color:#00ff9d;background:rgba(0,255,157,.015)}
+.quest.prog{border-left-color:#FFB800;background:rgba(255,184,0,.015)}
+.quest.lock{border-left-color:#1a2028;opacity:.35}
+.q-icon{font-size:13px;flex-shrink:0;margin-top:1px}
+.done .q-icon{color:#00ff9d}
+.prog .q-icon{animation:amber 1.4s ease-in-out infinite}
+.lock .q-icon{color:#2a3840}
+.q-body{flex:1}
+.q-name{font-size:12px;color:#e8f0f4;margin-bottom:3px}
+.q-desc{font-size:9px;color:#2a3840}
+.q-bar-row{display:flex;align-items:center;gap:8px;margin:5px 0 3px}
+.q-track{flex:1;height:6px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:220px}
+.q-fill{height:100%;background:linear-gradient(90deg,#cc8800,#FFB800);border-radius:1px}
+.fill-75{animation:bar75 1.2s cubic-bezier(.4,0,.2,1) .5s both}
+.fill-55{animation:bar55 1.2s cubic-bezier(.4,0,.2,1) .65s both}
+.q-pct{font-size:9px;color:#FFB800}
+.q-done-badge{float:right;font-size:8px;padding:2px 6px;border:1px solid #00ff9d;color:#00ff9d;background:rgba(0,255,157,.06)}
 
-<!-- TITLE -->
-<g class="q0">
-  <text x="32" y="26" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// REGISTRO</text>
-  <text x="128" y="26" class="mono" font-size="10" fill="#2a3840" letter-spacing="2">DE MISIONES</text>
-  <rect class="divline" x="32" y="34" height="1" width="0" fill="#1a2028"/>
-</g>
+.pulse-dot{width:6px;height:6px;border-radius:50%;background:#00ff9d;display:inline-block;margin-right:8px;animation:pulse 1.8s ease-in-out infinite;vertical-align:middle}
+.cursor{animation:blink 1s step-end infinite;color:#C8001A}
 
-<!-- QUEST 1 DONE -->
-<g class="q1">
-  <rect x="32" y="42" width="736" height="40" fill="#0d1014"/>
-  <rect x="32" y="42" width="3"   height="40" fill="#00ff9d"/>
-  <text x="53" y="58" dominant-baseline="central" class="mono" font-size="13" fill="#00ff9d">&#x2714;</text>
-  <text x="74" y="55" class="mono" font-size="12" fill="#e8f0f4">Dominar el Stack Full Stack</text>
-  <text x="74" y="72" class="mono" font-size="9"  fill="#2a3840">Java · Node.js · React · PostgreSQL — COMPLETADO</text>
-  <rect x="670" y="55" width="60" height="12" fill="#001a0d" stroke="#00ff9d" stroke-width="0.5"/>
-  <text x="700" y="61" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#00ff9d">100%</text>
-</g>
+/* Quest delays */
+.qd1{animation-delay:.10s}.qd2{animation-delay:.22s}.qd3{animation-delay:.34s}
+.qd4{animation-delay:.46s}.qd5{animation-delay:.58s}
 
-<!-- QUEST 2 DONE -->
-<g class="q2">
-  <rect x="32" y="84" width="736" height="40" fill="#06080a"/>
-  <rect x="32" y="84" width="3"   height="40" fill="#00ff9d"/>
-  <text x="53" y="100" dominant-baseline="central" class="mono" font-size="13" fill="#00ff9d">&#x2714;</text>
-  <text x="74" y="97"  class="mono" font-size="12" fill="#e8f0f4">Construir APIs REST escalables</text>
-  <text x="74" y="114" class="mono" font-size="9"  fill="#2a3840">NestJS + TypeScript + PostgreSQL — COMPLETADO</text>
-  <rect x="670" y="93" width="60" height="12" fill="#001a0d" stroke="#00ff9d" stroke-width="0.5"/>
-  <text x="700" y="99" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#00ff9d">100%</text>
-</g>
+/* CONTACT */
+.contact{display:flex;gap:8px;align-items:center}
+.cbtn{font-size:9px;letter-spacing:2px;padding:6px 14px;border:1px solid;font-family:'Courier New',monospace;cursor:pointer;display:flex;align-items:center;gap:6px}
+.cbtn.r{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
+.cbtn.g{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.03)}
+.cdot{width:5px;height:5px;border-radius:50%;background:currentColor}
+.status-right{margin-left:auto;font-size:8px;color:#2a3840;letter-spacing:2px;display:flex;align-items:center}
+</style>
 
-<!-- QUEST 3 IN PROGRESS -->
-<g class="q3">
-  <rect x="32" y="126" width="736" height="44" fill="#0d1014"/>
-  <rect x="32" y="126" width="3"   height="44" fill="#FFB800"/>
-  <text class="amber" x="53" y="144" dominant-baseline="central" font-family="'Courier New',monospace" font-size="13">&#x25BA;</text>
-  <text x="74" y="139" class="mono" font-size="12" fill="#e8f0f4">Desarrollo Mobile — React Native</text>
-  <!-- progress bar -->
-  <rect x="74" y="152" width="200" height="7" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b75" x="74" y="152" width="0" height="7" fill="url(#bamb)" rx="1"/>
-  <text x="282" y="155" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">75%</text>
-  <!-- pulse dot -->
-  <circle class="dot" cx="62" cy="155" r="3" fill="#FFB800"/>
-  <text x="300" y="155" dominant-baseline="central" class="mono" font-size="9" fill="#2a3840">EN PROGRESO</text>
-</g>
+<div class="w">
+<div class="hstrip"></div>
+<div class="body">
+  <div class="sec-hdr">// REGISTRO <span>DE MISIONES</span></div>
+  <hr class="divline"/>
 
-<!-- QUEST 4 IN PROGRESS -->
-<g class="q4">
-  <rect x="32" y="172" width="736" height="44" fill="#06080a"/>
-  <rect x="32" y="172" width="3"   height="44" fill="#FFB800"/>
-  <text class="amber" x="53" y="190" dominant-baseline="central" font-family="'Courier New',monospace" font-size="13">&#x25BA;</text>
-  <text x="74" y="183" class="mono" font-size="12" fill="#e8f0f4">Python para Backend / ML</text>
-  <rect x="74" y="196" width="200" height="7" fill="#0a0c0e" stroke="#1a2028" stroke-width="0.5" rx="1"/>
-  <rect class="b55" x="74" y="196" width="0" height="7" fill="url(#bamb)" rx="1"/>
-  <text x="282" y="199" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">55%</text>
-  <circle class="dot" cx="62" cy="199" r="3" fill="#FFB800"/>
-  <text x="300" y="199" dominant-baseline="central" class="mono" font-size="9" fill="#2a3840">FastAPI · NumPy — EN PROGRESO</text>
-</g>
+  <div class="quest done qd1">
+    <span class="q-icon">&#x2714;</span>
+    <div class="q-body">
+      <div class="q-name">Dominar el Stack Full Stack <span class="q-done-badge">100%</span></div>
+      <div class="q-desc">Java · Node.js · React · PostgreSQL — COMPLETADO</div>
+    </div>
+  </div>
 
-<!-- QUEST 5 LOCKED -->
-<g class="q5" opacity="0.35">
-  <rect x="32" y="218" width="736" height="34" fill="#0d1014"/>
-  <rect x="32" y="218" width="3"   height="34" fill="#1a2028"/>
-  <text x="53" y="234" dominant-baseline="central" class="mono" font-size="12" fill="#2a3840">&#x25A3;</text>
-  <text x="74" y="231" class="mono" font-size="12" fill="#2a3840">Deploy en la Nube — AWS / GCP</text>
-  <text x="74" y="245" class="mono" font-size="9"  fill="#1a2028">BLOQUEADO — Requiere nivel 5</text>
-</g>
+  <div class="quest done qd2">
+    <span class="q-icon">&#x2714;</span>
+    <div class="q-body">
+      <div class="q-name">Construir APIs REST escalables <span class="q-done-badge">100%</span></div>
+      <div class="q-desc">NestJS + TypeScript + PostgreSQL — COMPLETADO</div>
+    </div>
+  </div>
 
-<!-- CONTACT -->
-<g class="q6">
-  <text x="32" y="264" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">// INICIAR COMUNICACION</text>
+  <div class="quest prog qd3">
+    <span class="q-icon">&#x25BA;</span>
+    <div class="q-body">
+      <div class="q-name">Desarrollo Mobile — React Native</div>
+      <div class="q-bar-row">
+        <div class="q-track"><div class="q-fill fill-75"></div></div>
+        <span class="q-pct">75%</span>
+        <span style="font-size:9px;color:#2a3840">EN PROGRESO</span>
+      </div>
+    </div>
+  </div>
 
-  <!-- GitHub -->
-  <rect x="32" y="274" width="138" height="22" fill="#140005" stroke="#C8001A" stroke-width="1"/>
-  <text x="101" y="285" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">&#x25BA; GITHUB</text>
+  <div class="quest prog qd4">
+    <span class="q-icon">&#x25BA;</span>
+    <div class="q-body">
+      <div class="q-name">Python para Backend / ML</div>
+      <div class="q-bar-row">
+        <div class="q-track"><div class="q-fill fill-55"></div></div>
+        <span class="q-pct">55%</span>
+        <span style="font-size:9px;color:#2a3840">FastAPI · NumPy</span>
+      </div>
+    </div>
+  </div>
 
-  <!-- Email -->
-  <rect x="180" y="274" width="138" height="22" fill="#001a0d" stroke="#00ff9d" stroke-width="1"/>
-  <text x="249" y="285" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#00ff9d" letter-spacing="2">&#x25BA; EMAIL</text>
+  <div class="quest lock qd5">
+    <span class="q-icon">&#x25A3;</span>
+    <div class="q-body">
+      <div class="q-name">Deploy en la Nube — AWS / GCP</div>
+      <div class="q-desc">BLOQUEADO — Requiere nivel 5</div>
+    </div>
+  </div>
 
-  <!-- Status -->
-  <circle class="dot" cx="676" cy="285" r="5" fill="none" stroke="#00ff9d" stroke-width="1.5"/>
-  <circle cx="676" cy="285" r="2.5" fill="#00ff9d"/>
-  <text x="688" y="285" dominant-baseline="central" class="mono" font-size="8" fill="#2a3840" letter-spacing="1">SISTEMA ACTIVO</text>
-  <text class="cursor" x="778" y="285" dominant-baseline="central" class="mono" font-size="11" fill="#C8001A">_</text>
-</g>
+  <div style="border-top:1px solid #1a2028;margin:10px 0 10px"></div>
+  <div style="font-size:9px;letter-spacing:2px;color:#C8001A;margin-bottom:8px">// INICIAR COMUNICACION</div>
+  <div class="contact">
+    <div class="cbtn r"><span class="cdot"></span>GITHUB</div>
+    <div class="cbtn g"><span class="cdot"></span>EMAIL</div>
+    <div class="status-right">
+      <span class="pulse-dot"></span>
+      SISTEMA ACTIVO<span class="cursor">_</span>
+    </div>
+  </div>
+</div>
+<div class="bstrip"></div>
+</div>
+</div>
+</foreignObject>
 </svg>
