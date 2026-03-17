@@ -1,16 +1,16 @@
 <!-- ═══════════════════════════════════════════════════════════
-     DAVID MENDOZA — README.md
-     Perfil: github.com/MendozaDavidprogam
-     
-     INSTRUCCIONES:
-     1. Crea este repo: github.com/MendozaDavidprogam/MendozaDavidprogam
-     2. Sube los 3 archivos SVG a la carpeta /assets/ del repo
-     3. Sube este README.md al mismo repo
+     DAVID MENDOZA — README.md v2 (Animado)
+     Repo: github.com/MendozaDavidprogam/MendozaDavidprogam
+     Estructura:
+       README.md        ← raíz del repo
+       assets/
+         header.svg
+         stack.svg
+         quests.svg
      ═══════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<!-- HEADER SVG — fondo negro real con diseño embebido -->
 <img src="./assets/header.svg" width="100%" alt="David Mendoza — Full Stack Developer"/>
 
 </div>
@@ -34,7 +34,7 @@
 
 <div align="center">
 
-<img width="65%" src="https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=06080a&ring=C8001A&fire=C8001A&currStreakLabel=00ff9d&sideLabels=b8ccd4&border=1a2028&dates=3a5060&stroke=C8001A" />
+<img width="70%" src="https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=06080a&ring=C8001A&fire=C8001A&currStreakLabel=00ff9d&sideLabels=b8ccd4&border=1a2028&dates=3a5060&stroke=C8001A" />
 
 </div>
 
@@ -48,24 +48,30 @@
 
 ---
 
-<!-- INVENTARIO SVG — barras de color embebidas -->
-<img src="./assets/stack.svg" width="100%" alt="Tech Stack — Inventario"/>
+<div align="center">
 
----
+<img src="./assets/stack.svg" width="100%" alt="Inventario — Tech Stack"/>
 
-<!-- QUESTS + CONTACTO SVG -->
-<img src="./assets/quests.svg" width="100%" alt="Registro de Misiones"/>
+</div>
 
 ---
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/%E2%96%BA%20GITHUB-MendozaDavidprogam-C8001A?style=for-the-badge&logo=github&logoColor=C8001A&labelColor=0a0c0f)](https://github.com/MendozaDavidprogam)
+<img src="./assets/quests.svg" width="100%" alt="Registro de Misiones"/>
+
+</div>
+
+---
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/%E2%96%BA%20GITHUB-MendozaDavidprogam-C8001A?style=for-the-badge&logo=github&logoColor=C8001A&labelColor=06080a)](https://github.com/MendozaDavidprogam)
 &nbsp;
-[![Email](https://img.shields.io/badge/%E2%96%BA%20EMAIL-CONTACTAR-00ff9d?style=for-the-badge&logo=gmail&logoColor=00ff9d&labelColor=0a0c0f)](mailto:mendozadavidprogramacion2.0@gmail.com)
+[![Email](https://img.shields.io/badge/%E2%96%BA%20EMAIL-CONTACTAR-00ff9d?style=for-the-badge&logo=gmail&logoColor=00ff9d&labelColor=06080a)](mailto:mendozadavidprogramacion2.0@gmail.com)
 
 <br>
 
-![Profile Views](https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=flat-square&color=C8001A&labelColor=0a0c0f&label=VISITAS)
+![Profile Views](https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=flat-square&color=C8001A&labelColor=06080a&label=VISITAS)
 
 </div>

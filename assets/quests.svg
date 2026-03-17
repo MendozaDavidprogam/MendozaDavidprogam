@@ -1,70 +1,149 @@
-<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>.mono{font-family:'Share Tech Mono','Courier New',monospace}.orb{font-family:'Orbitron','Share Tech Mono',monospace}</style>
-  </defs>
+<svg width="800" height="310" viewBox="0 0 800 310" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+    .orb  { font-family: 'Orbitron', 'Share Tech Mono', monospace; }
 
-  <rect width="800" height="300" fill="#06080a"/>
+    @keyframes fadeUp {
+      0%   { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bar75 { 0% { width: 0; } 100% { width: 150px; } }
+    @keyframes bar55 { 0% { width: 0; } 100% { width: 110px; } }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50%      { opacity: 0.4; }
+    }
+    @keyframes iconPulse {
+      0%,100% { fill: #FFB800; }
+      50%      { fill: #ff8800; }
+    }
+    @keyframes hazscroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-20px); }
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+    @keyframes lineGrow {
+      0%   { width: 0; opacity: 0; }
+      100% { width: 736px; opacity: 1; }
+    }
 
-  <!-- Title -->
-  <text x="32" y="32" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// REGISTRO DE MISIONES</text>
-  <line x1="32" y1="40" x2="768" y2="40" stroke="#1a2028" stroke-width="1"/>
+    .q0 { animation: fadeUp 0.5s ease 0.1s both; }
+    .q1 { animation: fadeUp 0.5s ease 0.25s both; }
+    .q2 { animation: fadeUp 0.5s ease 0.4s both; }
+    .q3 { animation: fadeUp 0.5s ease 0.55s both; }
+    .q4 { animation: fadeUp 0.5s ease 0.7s both; }
+    .q5 { animation: fadeUp 0.5s ease 0.85s both; }
+    .q6 { animation: fadeUp 0.5s ease 1.0s both; }
 
-  <!-- Quest 1 — DONE -->
-  <rect x="32" y="52" width="736" height="36" fill="#0d1014"/>
-  <rect x="32" y="52" width="3" height="36" fill="#00ff9d"/>
-  <text x="52" y="66" dominant-baseline="central" class="mono" font-size="10" fill="#00ff9d">✔</text>
-  <text x="70" y="64" class="mono" font-size="11" fill="#e8f0f4">Dominar el Stack Full Stack</text>
-  <text x="70" y="78" class="mono" font-size="9" fill="#3a5060">Java · Node.js · React · PostgreSQL — COMPLETADO</text>
+    .prog-75 { animation: bar75 1.2s cubic-bezier(.4,0,.2,1) 0.6s both; }
+    .prog-55 { animation: bar55 1.2s cubic-bezier(.4,0,.2,1) 0.75s both; }
 
-  <!-- Quest 2 — DONE -->
-  <rect x="32" y="90" width="736" height="36" fill="#06080a"/>
-  <rect x="32" y="90" width="3" height="36" fill="#00ff9d"/>
-  <text x="52" y="104" dominant-baseline="central" class="mono" font-size="10" fill="#00ff9d">✔</text>
-  <text x="70" y="102" class="mono" font-size="11" fill="#e8f0f4">Construir APIs REST escalables</text>
-  <text x="70" y="116" class="mono" font-size="9" fill="#3a5060">NestJS + TypeScript + PostgreSQL — COMPLETADO</text>
+    .active-icon { animation: iconPulse 1.5s ease-in-out infinite; }
+    .active-dot  { animation: pulse 1.5s ease-in-out infinite; }
+    .cursor-blink { animation: blink 1s step-end infinite; }
+    .haz { animation: hazscroll 0.6s linear infinite; }
+    .divline { animation: lineGrow 0.8s ease 0.1s both; }
+  </style>
+  <pattern id="hz" x="0" y="0" width="20" height="3" patternUnits="userSpaceOnUse">
+    <rect x="0"  y="0" width="12" height="3" fill="#C8001A"/>
+    <rect x="12" y="0" width="8"  height="3" fill="#06080a"/>
+  </pattern>
+</defs>
 
-  <!-- Quest 3 — IN PROGRESS -->
-  <rect x="32" y="128" width="736" height="36" fill="#0d1014"/>
-  <rect x="32" y="128" width="3" height="36" fill="#FFB800"/>
-  <text x="52" y="142" dominant-baseline="central" class="mono" font-size="10" fill="#FFB800">►</text>
-  <text x="70" y="140" class="mono" font-size="11" fill="#e8f0f4">Desarrollo Mobile — React Native</text>
-  <!-- Progress bar -->
-  <rect x="500" y="135" width="160" height="6" fill="#1a2028"/>
-  <rect x="500" y="135" width="120" height="6" fill="#FFB800" opacity="0.85"/>
-  <text x="668" y="140" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">75%</text>
-  <text x="70" y="154" class="mono" font-size="9" fill="#3a5060">EN PROGRESO</text>
+<!-- BG -->
+<rect width="800" height="310" fill="#06080a"/>
+<line x1="0" y1="55" x2="800" y2="55" stroke="#0d1014" stroke-width="1"/>
+<line x1="0" y1="250" x2="800" y2="250" stroke="#0d1014" stroke-width="1"/>
 
-  <!-- Quest 4 — IN PROGRESS -->
-  <rect x="32" y="166" width="736" height="36" fill="#06080a"/>
-  <rect x="32" y="166" width="3" height="36" fill="#FFB800"/>
-  <text x="52" y="180" dominant-baseline="central" class="mono" font-size="10" fill="#FFB800">►</text>
-  <text x="70" y="178" class="mono" font-size="11" fill="#e8f0f4">Python para Backend / ML</text>
-  <rect x="500" y="173" width="160" height="6" fill="#1a2028"/>
-  <rect x="500" y="173" width="88" height="6" fill="#FFB800" opacity="0.85"/>
-  <text x="668" y="178" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">55%</text>
-  <text x="70" y="192" class="mono" font-size="9" fill="#3a5060">FastAPI · NumPy — EN PROGRESO</text>
+<!-- hazard strip -->
+<g class="haz"><rect x="-20" y="0"   width="840" height="3" fill="url(#hz)"/></g>
+<g class="haz"><rect x="-20" y="307" width="840" height="3" fill="url(#hz)"/></g>
 
-  <!-- Quest 5 — LOCKED -->
-  <rect x="32" y="204" width="736" height="36" fill="#0d1014" opacity="0.5"/>
-  <rect x="32" y="204" width="3" height="36" fill="#1a2028"/>
-  <text x="52" y="218" dominant-baseline="central" class="mono" font-size="10" fill="#3a5060">▣</text>
-  <text x="70" y="216" class="mono" font-size="11" fill="#3a5060">Deploy en la Nube — AWS / GCP</text>
-  <text x="70" y="230" class="mono" font-size="9" fill="#1a2028">BLOQUEADO — Requiere nivel 5</text>
+<!-- TITLE -->
+<g class="q0">
+  <text x="32" y="28" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// REGISTRO</text>
+  <text x="128" y="28" class="mono" font-size="10" fill="#3a5060" letter-spacing="2">DE MISIONES</text>
+  <rect class="divline" x="32" y="36" width="0" height="1" fill="#1a2028"/>
+</g>
 
-  <line x1="32" y1="250" x2="768" y2="250" stroke="#1a2028" stroke-width="1"/>
+<!-- Quest 1 — DONE -->
+<g class="q1">
+  <rect x="32" y="48" width="736" height="38" fill="#0d1014"/>
+  <rect x="32" y="48" width="3"   height="38" fill="#00ff9d"/>
+  <text x="52" y="63"  dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">✔</text>
+  <text x="72" y="61"  class="mono" font-size="12" fill="#e8f0f4">Dominar el Stack Full Stack</text>
+  <text x="72" y="77"  class="mono" font-size="9"  fill="#3a5060">Java · Node.js · React · PostgreSQL — COMPLETADO</text>
+  <text x="720" y="68" class="mono" font-size="9"  fill="#00ff9d" text-anchor="end">100%</text>
+</g>
 
-  <!-- Contact -->
-  <text x="32" y="268" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// INICIAR COMUNICACIÓN</text>
+<!-- Quest 2 — DONE -->
+<g class="q2">
+  <rect x="32" y="88" width="736" height="38" fill="#06080a"/>
+  <rect x="32" y="88" width="3"   height="38" fill="#00ff9d"/>
+  <text x="52" y="103" dominant-baseline="central" class="mono" font-size="12" fill="#00ff9d">✔</text>
+  <text x="72" y="101" class="mono" font-size="12" fill="#e8f0f4">Construir APIs REST escalables</text>
+  <text x="72" y="117" class="mono" font-size="9"  fill="#3a5060">NestJS + TypeScript + PostgreSQL — COMPLETADO</text>
+  <text x="720" y="108" class="mono" font-size="9" fill="#00ff9d" text-anchor="end">100%</text>
+</g>
 
-  <!-- GitHub button -->
-  <rect x="32" y="278" width="130" height="16" fill="none" stroke="#C8001A" stroke-width="1"/>
-  <text x="97" y="286" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">► GITHUB</text>
+<!-- Quest 3 — IN PROGRESS -->
+<g class="q3">
+  <rect x="32" y="128" width="736" height="42" fill="#0d1014"/>
+  <rect x="32" y="128" width="3"   height="42" fill="#FFB800"/>
+  <text x="52" y="143" dominant-baseline="central" class="active-icon" font-size="12">►</text>
+  <text x="72" y="141" class="mono" font-size="12" fill="#e8f0f4">Desarrollo Mobile — React Native</text>
+  <!-- progress bar -->
+  <rect x="490" y="138" width="200" height="7" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="prog-75" x="490" y="138" width="0" height="7" fill="#FFB800" rx="1"/>
+  <text x="698" y="143" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">75%</text>
+  <text x="72" y="161" class="mono" font-size="9" fill="#3a5060">EN PROGRESO</text>
+  <!-- pulse dot -->
+  <circle class="active-dot" cx="480" cy="142" r="3" fill="#FFB800"/>
+</g>
 
-  <!-- Email button -->
-  <rect x="172" y="278" width="130" height="16" fill="none" stroke="#00ff9d" stroke-width="1"/>
-  <text x="237" y="286" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#00ff9d" letter-spacing="2">► EMAIL</text>
+<!-- Quest 4 — IN PROGRESS -->
+<g class="q4">
+  <rect x="32" y="172" width="736" height="42" fill="#06080a"/>
+  <rect x="32" y="172" width="3"   height="42" fill="#FFB800"/>
+  <text x="52" y="187" dominant-baseline="central" class="active-icon" font-size="12">►</text>
+  <text x="72" y="185" class="mono" font-size="12" fill="#e8f0f4">Python para Backend / ML</text>
+  <!-- progress bar -->
+  <rect x="490" y="178" width="200" height="7" fill="#0d1014" stroke="#1a2028" stroke-width="0.5" rx="1"/>
+  <rect class="prog-55" x="490" y="178" width="0" height="7" fill="#FFB800" rx="1"/>
+  <text x="698" y="183" dominant-baseline="central" class="mono" font-size="9" fill="#FFB800">55%</text>
+  <text x="72" y="205" class="mono" font-size="9" fill="#3a5060">FastAPI · NumPy — EN PROGRESO</text>
+  <circle class="active-dot" cx="480" cy="182" r="3" fill="#FFB800"/>
+</g>
 
-  <!-- Status line -->
-  <circle cx="700" cy="286" r="3" fill="#00ff9d"/>
-  <text x="710" y="286" dominant-baseline="central" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">SISTEMA ACTIVO</text>
+<!-- Quest 5 — LOCKED -->
+<g class="q5" opacity="0.4">
+  <rect x="32" y="216" width="736" height="36" fill="#0d1014"/>
+  <rect x="32" y="216" width="3"   height="36" fill="#1a2028"/>
+  <text x="52" y="231" dominant-baseline="central" class="mono" font-size="12" fill="#3a5060">▣</text>
+  <text x="72" y="229" class="mono" font-size="12" fill="#3a5060">Deploy en la Nube — AWS / GCP</text>
+  <text x="72" y="244" class="mono" font-size="9"  fill="#1a2028">BLOQUEADO — Requiere nivel 5</text>
+</g>
+
+<!-- CONTACT SECTION -->
+<g class="q6">
+  <text x="32" y="268" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">// INICIAR COMUNICACIÓN</text>
+
+  <!-- GitHub btn -->
+  <rect x="32" y="278" width="138" height="20" fill="#1a0005" stroke="#C8001A" stroke-width="1"/>
+  <text x="101" y="288" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#C8001A" letter-spacing="2">► GITHUB</text>
+
+  <!-- Email btn -->
+  <rect x="180" y="278" width="138" height="20" fill="#001a0d" stroke="#00ff9d" stroke-width="1"/>
+  <text x="249" y="288" text-anchor="middle" dominant-baseline="central" class="mono" font-size="9" fill="#00ff9d" letter-spacing="2">► EMAIL</text>
+
+  <!-- System status right -->
+  <circle class="active-dot" cx="680" cy="288" r="4" fill="none" stroke="#00ff9d" stroke-width="1.5"/>
+  <circle cx="680" cy="288" r="2" fill="#00ff9d"/>
+  <text x="692" y="288" dominant-baseline="central" class="mono" font-size="8" fill="#3a5060" letter-spacing="1">SISTEMA ACTIVO</text>
+  <text class="cursor-blink" x="776" y="288" dominant-baseline="central" class="mono" font-size="10" fill="#C8001A">_</text>
+</g>
 </svg>
