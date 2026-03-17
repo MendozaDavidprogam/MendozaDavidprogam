@@ -1,116 +1,173 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=rect&color=C8001A&height=4&section=header)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,2,3&height=200&section=header&text=DAVID%20MENDOZA&fontSize=60&fontColor=FFFFFF&fontAlignY=45&fontAlign=50&animation=twinkling&desc=◈%20FULL%20STACK%20DEVELOPER%20◈%20LARA%2C%20VENEZUELA%20◈&descAlignY=68&descSize=14&descColor=C8001A&stroke=C8001A&strokeWidth=2)
 
 </div>
 
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0d0d14&customColorList=0,2,2,5,30&height=160&section=header&text=DAVID%20MENDOZA&fontSize=42&fontColor=FFFFFF&fontAlignY=55&animation=fadeIn&desc=FULL%20STACK%20DEVELOPER%20%2F%2F%20OPERATIVO%20ACTIVO&descAlignY=78&descSize=13&descColor=C8001A)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=15&duration=2500&pause=1000&color=C8001A&center=true&vCenter=true&width=680&lines=%E2%96%88+%5BSYS%5D+Operador+identificado+%E2%80%94+David+Mendoza+%E2%96%88;%E2%96%88+%5BSYS%5D+Backend+%26+Frontend+Engineer+%2F%2F+ONLINE+%E2%96%88;%E2%96%88+%5BSYS%5D+Java+%7C+Node.js+%7C+React+%7C+Python+%2F%2F+CARGADO+%E2%96%88;%E2%96%88+%5BWARN%5D+Siempre+buscando+nuevos+desaf%C3%ADos+%E2%96%88)](https://github.com/MendozaDavidprogam)
 
 </div>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=14&duration=2800&pause=1200&color=C8001A&center=true&vCenter=true&width=600&lines=%3E_+%5BSYS%5D+Operador+identificado+%E2%80%94+David+Mendoza;%3E_+%5BSYS%5D+Rol+%3A+Full+Stack+Developer+%2F%2F+ONLINE;%3E_+%5BSYS%5D+Nodo+%3A+Lara%2C+Venezuela+%2F%2F+SE%C3%91AL+ACTIVA;%3E_+%5BWARN%5D+Siempre+buscando+nuevos+desaf%C3%ADos...;%3E_+%5BOK%5D++Sistema+listo+para+el+despliegue.)](https://github.com/MendozaDavidprogam)
-
-</div>
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GITHUB-MendozaDavidprogam-C8001A?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d14)](https://github.com/MendozaDavidprogam)&nbsp;
-[![Email](https://img.shields.io/badge/EMAIL-CONTACTAR-00ff88?style=for-the-badge&logo=gmail&logoColor=0d0d14&labelColor=0d0d14)](mailto:mendozadavidprogramacion2.0@gmail.com)&nbsp;
-[![Status](https://img.shields.io/badge/STATUS-DISPONIBLE-00ff88?style=for-the-badge&labelColor=0d0d14&logo=statuspage&logoColor=00ff88)](https://github.com/MendozaDavidprogam)
-
-</div>
-
----
-
-## `⬡ LOG DEL SISTEMA`
-
-```diff
-+ [SYS]  Operador identificado — David Mendoza
-+ [SYS]  Rol        — Full Stack Developer
-+ [SYS]  Nodo       — Lara, Venezuela
-+ [SYS]  Formación  — Gracosoft
-+ [SYS]  Estado     — ACTIVO / En constante aprendizaje
-- [WARN] Siempre buscando nuevos desafíos del sistema
-```
-
-> *Desarrollador con enfoque en backend y frontend. Apasionado por crear aplicaciones web de alto rendimiento con experiencias de usuario claras. Código limpio, funcional y orientado a buenas prácticas.*
-
----
-
-## `⬡ SISTEMAS CARGADOS`
-
-<div align="center">
-
-**`— FRONTEND —`**
-
-![React](https://img.shields.io/badge/React-0d0d14?style=flat-square&logo=react&logoColor=61DAFB)&nbsp;
-![TypeScript](https://img.shields.io/badge/TypeScript-0d0d14?style=flat-square&logo=typescript&logoColor=3178C6)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-0d0d14?style=flat-square&logo=javascript&logoColor=F7DF1E)&nbsp;
-![HTML5](https://img.shields.io/badge/HTML5-0d0d14?style=flat-square&logo=html5&logoColor=E34F26)&nbsp;
-![CSS3](https://img.shields.io/badge/CSS3-0d0d14?style=flat-square&logo=css3&logoColor=264DE4)&nbsp;
-![React Native](https://img.shields.io/badge/React_Native-0d0d14?style=flat-square&logo=react&logoColor=61DAFB)
 
 <br>
 
-**`— BACKEND & HERRAMIENTAS —`**
+<div align="center">
 
-![Java](https://img.shields.io/badge/Java-0d0d14?style=flat-square&logo=openjdk&logoColor=F89820)&nbsp;
-![NodeJS](https://img.shields.io/badge/Node.js-0d0d14?style=flat-square&logo=node.js&logoColor=6DA55F)&nbsp;
-![NestJS](https://img.shields.io/badge/NestJS-0d0d14?style=flat-square&logo=nestjs&logoColor=E0234E)&nbsp;
-![Python](https://img.shields.io/badge/Python-0d0d14?style=flat-square&logo=python&logoColor=3776AB)&nbsp;
-![PHP](https://img.shields.io/badge/PHP-0d0d14?style=flat-square&logo=php&logoColor=8892BF)&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d0d14?style=flat-square&logo=postgresql&logoColor=336791)&nbsp;
-![MySQL](https://img.shields.io/badge/MySQL-0d0d14?style=flat-square&logo=mysql&logoColor=4479A1)&nbsp;
-![Git](https://img.shields.io/badge/Git-0d0d14?style=flat-square&logo=git&logoColor=F05032)
+[![GitHub](https://img.shields.io/badge/◈_GITHUB-MendozaDavidprogam-C8001A?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0f)](https://github.com/MendozaDavidprogam)
+[![Email](https://img.shields.io/badge/◈_EMAIL-CONTACTAR-00ff88?style=for-the-badge&logo=gmail&logoColor=0a0a0f&labelColor=0a0a0f)](mailto:mendozadavidprogramacion2.0@gmail.com)
+[![Status](https://img.shields.io/badge/◈_STATUS-DISPONIBLE-00ff88?style=for-the-badge&labelColor=0a0a0f&logo=statuspage&logoColor=00ff88)](https://github.com/MendozaDavidprogam)
 
 </div>
 
+<br>
+
 ---
 
-## `⬡ ESTADÍSTICAS DEL SISTEMA`
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+---
+
+<br>
+
+## `◈ LOG DEL SISTEMA`
+
+```diff
+@@  ╔══════════════════════════════════════════════════╗  @@
+@@  ║       UMBRELLA CORP · FICHA DE OPERATIVO         ║  @@
+@@  ╚══════════════════════════════════════════════════╝  @@
+
++ [SYS]  Operador   →  David Mendoza
++ [SYS]  Rol        →  Full Stack Developer
++ [SYS]  Nodo       →  Lara, Venezuela
++ [SYS]  Formación  →  Gracosoft
++ [SYS]  Estado     →  ACTIVO · En constante aprendizaje
+- [WARN] Siempre buscando nuevos desafíos del sistema
+! [INFO] Código limpio · Funcional · Buenas prácticas
+```
+
+<br>
+
+---
+
+## `◈ SISTEMAS CARGADOS`
+
+<br>
 
 <div align="center">
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api?username=MendozaDavidprogam&show_icons=true&hide_border=true&bg_color=0d0d14&title_color=C8001A&icon_color=00ff88&text_color=c8c8d8&rank_icon=github&count_private=true" />
-<img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MendozaDavidprogam&layout=compact&hide_border=true&bg_color=0d0d14&title_color=C8001A&text_color=c8c8d8&langs_count=8" />
+**`◤ FRONTEND ◢`**
+
+<br>
+
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 <br><br>
 
-<img width="65%" src="https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=0d0d14&ring=C8001A&fire=C8001A&currStreakLabel=00ff88&sideLabels=c8c8d8&border=1a1a2a&dates=55556a&stroke=C8001A&hide_border=true" />
+**`◤ BACKEND & TOOLS ◢`**
+
+<br>
+
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+
+<br>
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
+<br>
+
 ---
 
-## `⬡ ACTIVIDAD RECIENTE`
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+---
+
+<br>
+
+## `◈ ESTADÍSTICAS DEL SISTEMA`
+
+<br>
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MendozaDavidprogam&bg_color=0d0d14&color=c8c8d8&line=C8001A&point=00ff88&area=true&area_color=C8001A&hide_border=true&title_color=C8001A)](https://github.com/MendozaDavidprogam)
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" align="center">
+
+![David's GitHub Stats](https://github-readme-stats.vercel.app/api?username=MendozaDavidprogam&show_icons=true&hide_border=true&bg_color=0a0a0f&title_color=C8001A&icon_color=00ff88&text_color=c8c8d8&rank_icon=github&count_private=true&include_all_commits=true)
+
+</td>
+<td width="50%" align="center">
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MendozaDavidprogam&layout=compact&hide_border=true&bg_color=0a0a0f&title_color=C8001A&text_color=c8c8d8&langs_count=8)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+![GitHub Streak](https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=0a0a0f&ring=C8001A&fire=C8001A&currStreakLabel=00ff88&sideLabels=c8c8d8&border=1a1a2e&dates=55556a&stroke=C8001A&hide_border=true&mode=weekly)
 
 </div>
 
+<br>
+
 ---
+
+## `◈ ACTIVIDAD RECIENTE`
+
+<br>
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=MendozaDavidprogam&bg_color=0a0a0f&color=c8c8d8&line=C8001A&point=00ff88&area=true&area_color=C8001A&hide_border=true&title_color=C8001A&radius=4)](https://github.com/MendozaDavidprogam)
+
+</div>
+
+<br>
+
+---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+---
+
+<br>
 
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║   [ SISTEMA ACTIVO ] — DAVID MENDOZA — LARA, VENEZUELA      ║
-║   Full Stack Developer // github.com/MendozaDavidprogam      ║
-╚══════════════════════════════════════════════════════════════╝
+┌──────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│   ◈  SISTEMA ACTIVO  ◈  DAVID MENDOZA  ◈  LARA, VENEZUELA  ◈   │
+│         Full Stack Developer · github.com/MendozaDavidprogam     │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
-![Profile Views](https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=flat-square&color=C8001A&labelColor=0d0d14&label=VISITAS+AL+PERFIL)
+![Profile Views](https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=for-the-badge&color=C8001A&labelColor=0a0a0f&label=◈+VISITAS+AL+PERFIL)
 
 </div>
 
+<br>
+
 <div align="center">
 
-![footer](https://capsule-render.vercel.app/api?type=rect&color=C8001A&height=4&section=footer)
+![footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,2,3&height=120&section=footer&animation=twinkling)
 
 </div>
