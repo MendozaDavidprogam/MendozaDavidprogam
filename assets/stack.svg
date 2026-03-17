@@ -1,109 +1,81 @@
-<svg fill="none" width="800" height="570" viewBox="0 0 800 570" xmlns="http://www.w3.org/2000/svg">
-<foreignObject width="800" height="570">
-<div xmlns="http://www.w3.org/1999/xhtml">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="570" viewBox="0 0 800 570">
+<foreignObject x="0" y="0" width="800" height="570">
+<div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.w{width:800px;height:570px;background:#06080a;font-family:'Courier New',Courier,monospace;color:#b8ccd4;position:relative;overflow:hidden}
-
+.w{width:800px;height:570px;background:#06080a;font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;color:#b8ccd4;position:relative;overflow:hidden}
 @keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
-.hstrip{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
-.bstrip{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
-
-@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.ht{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
+.hb{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
+@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @keyframes bar{from{width:0}}
-
-.body{padding:12px 28px}
-.sec-hdr{font-size:9px;letter-spacing:3px;color:#C8001A;margin-bottom:4px}
-.sec-hdr span{color:#2a3840}
-.divline{border:none;border-top:1px solid #1a2028;margin-bottom:12px}
-.legend{font-size:8px;float:right;color:#2a3840;margin-top:-18px}
-.leg-s{color:#00ff9d}.leg-a{color:#4488ff}.leg-b{color:#3a5060}
-
-.cat-label{display:inline-block;font-size:8px;letter-spacing:2px;padding:2px 8px;border:1px solid;margin-bottom:8px}
-.cat-r{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
-.cat-g{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.03)}
-.cat-w{border-color:#1a2028;color:#4a6070}
-
-/* SKILL ROWS */
-.tbl{width:100%;border-collapse:collapse;margin-bottom:10px}
-.tbl tr{border-bottom:1px solid #0d1014;animation:fadeUp .5s ease both}
-.tbl tr:hover td{background:#0d1014}
-.tbl td{padding:6px 8px;font-size:11px}
-.col-name{color:#e8f0f4;width:160px}
-.col-tier{width:30px;font-size:10px;font-weight:bold}
-.tier-s{color:#00ff9d}.tier-a{color:#4488ff}.tier-b{color:#4a6070}
-.col-bar{width:210px}
-.bar-track{width:200px;height:7px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden}
-.bar-fill{height:100%;border-radius:1px;animation:bar 1.2s cubic-bezier(.4,0,.2,1) both}
-.fill-r{background:linear-gradient(90deg,#900010,#C8001A)}
-.fill-b{background:linear-gradient(90deg,#2255cc,#4488ff)}
-.fill-d{background:#2a3840}
-.col-pct{color:#4a6070;font-size:9px;width:36px}
-
-/* Row delays */
-.d1{animation-delay:.10s}.d2{animation-delay:.18s}.d3{animation-delay:.26s}
-.d4{animation-delay:.34s}.d5{animation-delay:.42s}.d6{animation-delay:.50s}
-.d7{animation-delay:.58s}.d8{animation-delay:.66s}.d9{animation-delay:.74s}
-.d10{animation-delay:.82s}.d11{animation-delay:.90s}.d12{animation-delay:.98s}
-.d13{animation-delay:1.06s}.d14{animation-delay:1.14s}
-
-/* Bar delays */
-.b1{animation-delay:.20s;width:180px}.b2{animation-delay:.28s;width:176px}
-.b3{animation-delay:.36s;width:160px}.b4{animation-delay:.44s;width:140px}
-.b5{animation-delay:.52s;width:120px}.b6{animation-delay:.60s;width:174px}
-.b7{animation-delay:.68s;width:164px}.b8{animation-delay:.76s;width:170px}
-.b9{animation-delay:.84s;width:168px}.b10{animation-delay:.92s;width:150px}
-.b11{animation-delay:1.0s;width:172px}.b12{animation-delay:1.08s;width:184px}
-.b13{animation-delay:1.16s;width:156px}
-
-.sep{border:none;border-top:1px solid #1a2028;margin:8px 0 10px}
+.bd{padding:12px 28px}
+.sh{font-size:9px;letter-spacing:3px;color:#C8001A;margin-bottom:3px}
+.sh span{color:#2a3840}
+.dv{border:none;border-top:1px solid #1a2028;margin-bottom:10px}
+.lg{font-size:8px;float:right;color:#2a3840;margin-top:-16px}
+.ls{color:#00ff9d}.la{color:#4488ff}.lb{color:#3a5060}
+.cl{display:inline-block;font-size:8px;letter-spacing:2px;padding:2px 8px;border:1px solid;margin-bottom:7px}
+.cr{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
+.cg{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.03)}
+.cw{border-color:#1a2028;color:#4a6070}
+.tb{width:100%;border-collapse:collapse;margin-bottom:8px}
+.tb tr{border-bottom:1px solid #0d1014;animation:fu .5s ease both}
+.tb tr:nth-child(odd) td{background:#0d1014}
+.tb td{padding:6px 8px;font-size:11px;vertical-align:middle}
+.tn{color:#e8f0f4;width:155px}
+.tt{width:28px;font-size:10px;font-weight:bold}
+.ts{color:#00ff9d}.ta{color:#4488ff}.tb2{color:#4a6070}
+.tc{width:215px}
+.bk{width:200px;height:7px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;display:block}
+.bf{height:100%;border-radius:1px;animation:bar 1.2s cubic-bezier(.4,0,.2,1) both}
+.fr{background:linear-gradient(90deg,#880010,#C8001A)}
+.fb{background:linear-gradient(90deg,#224499,#4488ff)}
+.fd{background:#2a3840}
+.tp{color:#4a6070;font-size:9px;width:36px}
+.sp{border:none;border-top:1px solid #1a2028;margin:6px 0 8px}
+.d01{animation-delay:.08s}.d02{animation-delay:.15s}.d03{animation-delay:.22s}.d04{animation-delay:.29s}.d05{animation-delay:.36s}
+.d06{animation-delay:.43s}.d07{animation-delay:.50s}.d08{animation-delay:.57s}.d09{animation-delay:.64s}.d10{animation-delay:.71s}
+.d11{animation-delay:.78s}.d12{animation-delay:.85s}.d13{animation-delay:.92s}
+.b01{animation-delay:.15s;width:180px}.b02{animation-delay:.22s;width:176px}.b03{animation-delay:.29s;width:160px}
+.b04{animation-delay:.36s;width:140px}.b05{animation-delay:.43s;width:120px}.b06{animation-delay:.50s;width:174px}
+.b07{animation-delay:.57s;width:164px}.b08{animation-delay:.64s;width:170px}.b09{animation-delay:.71s;width:168px}
+.b10{animation-delay:.78s;width:150px}.b11{animation-delay:.85s;width:172px}.b12{animation-delay:.92s;width:184px}
+.b13{animation-delay:.99s;width:156px}
 </style>
-
 <div class="w">
-<div class="hstrip"></div>
-<div class="body">
-  <div class="sec-hdr">// INVENTARIO <span>— TECH STACK</span>
-    <span class="legend">
-      <span class="leg-s">S</span> Maestría &nbsp;
-      <span class="leg-a">A</span> Avanzado &nbsp;
-      <span class="leg-b">B</span> Básico
-    </span>
+<div class="ht"></div>
+<div class="bd">
+  <div class="sh">// INVENTARIO <span>— TECH STACK</span>
+    <span class="lg"><span class="ls">S</span> Maestría &nbsp;<span class="la">A</span> Avanzado &nbsp;<span class="lb">B</span> Básico</span>
   </div>
-  <hr class="divline"/>
-
-  <!-- BACKEND -->
-  <div class="cat-label cat-r">BACKEND</div>
-  <table class="tbl">
-    <tr class="d1"><td class="col-name">Java</td><td class="col-tier tier-s">S</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-r b1"></div></div></td><td class="col-pct">90%</td></tr>
-    <tr class="d2"><td class="col-name">Node.js</td><td class="col-tier tier-s">S</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-r b2"></div></div></td><td class="col-pct">88%</td></tr>
-    <tr class="d3"><td class="col-name">NestJS</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b3"></div></div></td><td class="col-pct">80%</td></tr>
-    <tr class="d4"><td class="col-name">Python</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b4"></div></div></td><td class="col-pct">70%</td></tr>
-    <tr class="d5"><td class="col-name">PHP</td><td class="col-tier tier-b">B</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-d b5"></div></div></td><td class="col-pct">60%</td></tr>
+  <hr class="dv" />
+  <div class="cl cr">BACKEND</div>
+  <table class="tb">
+    <tr class="d01"><td class="tn">Java</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b01"></span></span></td><td class="tp">90%</td></tr>
+    <tr class="d02"><td class="tn">Node.js</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b02"></span></span></td><td class="tp">88%</td></tr>
+    <tr class="d03"><td class="tn">NestJS</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b03"></span></span></td><td class="tp">80%</td></tr>
+    <tr class="d04"><td class="tn">Python</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b04"></span></span></td><td class="tp">70%</td></tr>
+    <tr class="d05"><td class="tn">PHP</td><td class="tt tb2">B</td><td class="tc"><span class="bk"><span class="bf fd b05"></span></span></td><td class="tp">60%</td></tr>
   </table>
-
-  <hr class="sep"/>
-
-  <!-- FRONTEND -->
-  <div class="cat-label cat-g">FRONTEND</div>
-  <table class="tbl">
-    <tr class="d6"><td class="col-name">React</td><td class="col-tier tier-s">S</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-r b6"></div></div></td><td class="col-pct">87%</td></tr>
-    <tr class="d7"><td class="col-name">TypeScript</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b7"></div></div></td><td class="col-pct">82%</td></tr>
-    <tr class="d8"><td class="col-name">JavaScript</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b8"></div></div></td><td class="col-pct">85%</td></tr>
-    <tr class="d9"><td class="col-name">HTML5 / CSS3</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b9"></div></div></td><td class="col-pct">84%</td></tr>
-    <tr class="d10"><td class="col-name">React Native</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b10"></div></div></td><td class="col-pct">75%</td></tr>
+  <hr class="sp" />
+  <div class="cl cg">FRONTEND</div>
+  <table class="tb">
+    <tr class="d06"><td class="tn">React</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b06"></span></span></td><td class="tp">87%</td></tr>
+    <tr class="d07"><td class="tn">TypeScript</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b07"></span></span></td><td class="tp">82%</td></tr>
+    <tr class="d08"><td class="tn">JavaScript</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b08"></span></span></td><td class="tp">85%</td></tr>
+    <tr class="d09"><td class="tn">HTML5 / CSS3</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b09"></span></span></td><td class="tp">84%</td></tr>
+    <tr class="d10"><td class="tn">React Native</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b10"></span></span></td><td class="tp">75%</td></tr>
   </table>
-
-  <hr class="sep"/>
-
-  <!-- DB -->
-  <div class="cat-label cat-w">DB &amp; HERRAMIENTAS</div>
-  <table class="tbl">
-    <tr class="d11"><td class="col-name">PostgreSQL</td><td class="col-tier tier-s">S</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-r b11"></div></div></td><td class="col-pct">86%</td></tr>
-    <tr class="d12"><td class="col-name">Git / GitHub</td><td class="col-tier tier-s">S</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-r b12"></div></div></td><td class="col-pct">92%</td></tr>
-    <tr class="d13"><td class="col-name">MySQL</td><td class="col-tier tier-a">A</td><td class="col-bar"><div class="bar-track"><div class="bar-fill fill-b b13"></div></div></td><td class="col-pct">78%</td></tr>
+  <hr class="sp" />
+  <div class="cl cw">DB &amp; HERRAMIENTAS</div>
+  <table class="tb">
+    <tr class="d11"><td class="tn">PostgreSQL</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b11"></span></span></td><td class="tp">86%</td></tr>
+    <tr class="d12"><td class="tn">Git / GitHub</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b12"></span></span></td><td class="tp">92%</td></tr>
+    <tr class="d13"><td class="tn">MySQL</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b13"></span></span></td><td class="tp">78%</td></tr>
   </table>
 </div>
-<div class="bstrip"></div>
+<div class="hb"></div>
 </div>
 </div>
 </foreignObject>
