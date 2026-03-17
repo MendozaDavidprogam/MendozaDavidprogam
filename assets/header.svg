@@ -1,151 +1,106 @@
-<svg fill="none" width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
-<foreignObject width="800" height="220">
-<div xmlns="http://www.w3.org/1999/xhtml">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="220" viewBox="0 0 800 220">
+<foreignObject x="0" y="0" width="800" height="220">
+<div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.w{width:800px;height:220px;background:#06080a;font-family:'Courier New',Courier,monospace;color:#b8ccd4;position:relative;overflow:hidden;border-bottom:1px solid #1a2028}
-
-/* HAZARD STRIP */
+.w{width:800px;height:220px;background:#06080a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#b8ccd4;position:relative;overflow:hidden}
 @keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
-.top-strip,.bot-strip{height:4px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 4px;animation:hz .5s linear infinite}
-.bot-strip{position:absolute;bottom:0;left:0;right:0}
-
-/* SCAN LINE */
+.ht{height:4px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 4px;animation:hz .5s linear infinite}
+.hb{position:absolute;bottom:0;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 4px;animation:hz .5s linear infinite}
 @keyframes scan{from{top:-40px}to{top:260px}}
-.scan{position:absolute;left:0;right:0;height:40px;background:linear-gradient(transparent,rgba(255,255,255,.04),transparent);animation:scan 3s linear infinite;pointer-events:none;z-index:10}
-
-/* MAIN CONTENT */
-.body{padding:14px 28px 0;position:relative}
-.row1{display:flex;align-items:flex-start;gap:18px;margin-bottom:14px}
-
-/* MONOGRAM */
-@keyframes cblink{0%,48%,100%{opacity:1}50%,98%{opacity:.1}}
-.mono-box{width:66px;height:66px;flex-shrink:0;border:1.5px solid #C8001A;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#C8001A;position:relative;background:rgba(200,0,26,.03)}
-.mono-box::before,.mono-box::after{content:'';position:absolute;width:10px;height:10px;border-color:#00ff9d;border-style:solid}
-.mono-box::before{top:-1px;left:-1px;border-width:2px 0 0 2px;animation:cblink 2.5s step-end infinite}
-.mono-box::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0;animation:cblink 2.5s step-end infinite .8s}
-
-/* NAME */
-@keyframes glitch{0%,91%,100%{transform:translate(0);color:#e8f0f4}92%{transform:translate(-3px,0);color:#ff3344}94%{transform:translate(3px,0);color:#00ff9d}96%{transform:translate(0);color:#e8f0f4}}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.name{font-size:26px;font-weight:900;letter-spacing:3px;color:#e8f0f4;animation:glitch 7s ease-in-out infinite;line-height:1}
-.cursor{animation:blink 1s step-end infinite;color:#C8001A;font-size:24px}
-.role{font-size:10px;color:#C8001A;letter-spacing:5px;margin-top:5px}
-
-/* BADGES */
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
-.badges{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
-.badge{font-size:8px;letter-spacing:2px;padding:3px 8px;border:1px solid;display:flex;align-items:center;gap:5px}
-.bg{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.04)}
-.br{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
-.bw{border-color:#1a2028;color:#4a6070}
-.dot{width:5px;height:5px;border-radius:50%;background:#00ff9d;animation:pulse 1.8s ease-in-out infinite}
-
-/* STATUS BOX */
-.status-box{position:absolute;top:14px;right:18px;border:1px solid #1a2028;padding:10px 14px;text-align:center;background:#0d1014;font-size:7px;letter-spacing:2px;color:#2a3840}
-.ring-outer{width:28px;height:28px;border:1.5px solid #1a2028;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 5px}
-.ring-inner{width:20px;height:20px;border:1.5px solid #00ff9d;border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pulse 1.8s ease-in-out infinite}
-.ring-dot{width:7px;height:7px;background:#00ff9d;border-radius:50%}
-
-/* VITALS */
-@keyframes fillHP{from{width:0}to{width:92%}}
-@keyframes fillXP{from{width:0}to{width:78%}}
-@keyframes fillPWR{from{width:0}to{width:85%}}
-.vitals{margin-top:2px}
-.vrow{display:flex;align-items:center;gap:8px;font-size:8px;letter-spacing:1px;margin-bottom:5px}
-.vlbl{width:28px;color:#2a3840}
-.vtrack{flex:1;height:6px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:280px}
-.vbar{height:100%;border-radius:1px}
-.vhp{background:linear-gradient(90deg,#00cc7a,#00ff9d);animation:fillHP 1.3s cubic-bezier(.4,0,.2,1) .5s both}
-.vxp{background:linear-gradient(90deg,#00aa60,#00ff9d);animation:fillXP 1.3s cubic-bezier(.4,0,.2,1) .7s both}
-.vpwr{background:linear-gradient(90deg,#900010,#C8001A);animation:fillPWR 1.3s cubic-bezier(.4,0,.2,1) .9s both}
-.vpct{font-size:8px;color:#3a5060;width:28px}
-.vpct.g{color:#00ff9d}.vpct.r{color:#C8001A}
-
-/* GRID LINES */
-.grid{position:absolute;inset:0;pointer-events:none}
-.grid-h{position:absolute;left:0;right:0;height:1px;background:#0d1014}
-.grid-v{position:absolute;top:0;bottom:0;width:1px;background:#0d1014;right:158px}
-
-/* DECORATIVE DOTS */
-.deco-dots{position:absolute;right:140px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-evenly;padding:10px 0}
-.ddot{width:3px;height:3px;border-radius:50%;background:#1a2028}
-.ddot.red{background:#C8001A}
+.sc{position:absolute;left:0;right:0;height:40px;background:linear-gradient(transparent,rgba(255,255,255,.04),transparent);animation:scan 3s linear infinite;pointer-events:none;z-index:5}
+@keyframes g{0%,90%,100%{letter-spacing:3px;color:#e8f0f4}92%{letter-spacing:2px;color:#ff3344}94%{letter-spacing:4px;color:#00ff9d}96%{letter-spacing:3px;color:#e8f0f4}}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes pu{0%,100%{opacity:1}50%{opacity:.15}}
+@keyframes cb{0%,48%,100%{opacity:1}50%,98%{opacity:.1}}
+@keyframes fhp{from{width:0}to{width:92%}}
+@keyframes fxp{from{width:0}to{width:78%}}
+@keyframes fpw{from{width:0}to{width:85%}}
+@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.bd{padding:14px 28px;position:relative}
+.r1{display:flex;align-items:flex-start;gap:18px}
+.mb{width:66px;height:66px;flex-shrink:0;border:1.5px solid #C8001A;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#C8001A;position:relative;background:rgba(200,0,26,.03)}
+.c1{position:absolute;top:-1px;left:-1px;width:10px;height:10px;border-top:2px solid #00ff9d;border-left:2px solid #00ff9d;animation:cb 2.5s step-end infinite}
+.c2{position:absolute;top:-1px;right:-1px;width:10px;height:10px;border-top:2px solid #00ff9d;border-right:2px solid #00ff9d}
+.c3{position:absolute;bottom:-1px;left:-1px;width:10px;height:10px;border-bottom:2px solid #00ff9d;border-left:2px solid #00ff9d}
+.c4{position:absolute;bottom:-1px;right:-1px;width:10px;height:10px;border-bottom:2px solid #00ff9d;border-right:2px solid #00ff9d;animation:cb 2.5s step-end infinite .9s}
+.nm{font-size:26px;font-weight:900;letter-spacing:3px;line-height:1;animation:g 7s ease-in-out infinite}
+.cu{animation:bl 1s step-end infinite;color:#C8001A}
+.ro{font-size:10px;color:#C8001A;letter-spacing:5px;margin-top:5px;animation:fu .6s ease .2s both}
+.bg{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap;animation:fu .6s ease .4s both}
+.bx{font-size:8px;letter-spacing:2px;padding:3px 8px;border:1px solid;display:flex;align-items:center;gap:5px}
+.bg-g{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.04)}
+.bg-r{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
+.bg-w{border-color:#1a2028;color:#4a6070}
+.pd{width:5px;height:5px;border-radius:50%;background:#00ff9d;animation:pu 1.8s ease-in-out infinite}
+.sb{position:absolute;top:14px;right:20px;border:1px solid #1a2028;padding:9px 14px;text-align:center;background:#0d1014;animation:fu .6s ease .3s both}
+.sr{width:26px;height:26px;border:1.5px solid #00ff9d;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 5px;animation:pu 1.8s ease-in-out infinite}
+.sd{width:9px;height:9px;background:#00ff9d;border-radius:50%}
+.sl{font-size:7px;letter-spacing:2px;color:#2a3840}
+.vt{margin-top:10px;animation:fu .6s ease .6s both}
+.vl{font-size:7px;letter-spacing:3px;color:#1a2028;margin-bottom:5px}
+.vr{display:flex;align-items:center;gap:8px;font-size:8px;margin-bottom:5px}
+.vn{width:28px;color:#2a3840}
+.vk{flex:1;height:6px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:280px}
+.vh{height:100%;border-radius:1px}
+.v1{background:linear-gradient(90deg,#00aa66,#00ff9d);animation:fhp 1.3s cubic-bezier(.4,0,.2,1) .5s both}
+.v2{background:linear-gradient(90deg,#009955,#00ff9d);animation:fxp 1.3s cubic-bezier(.4,0,.2,1) .7s both}
+.v3{background:linear-gradient(90deg,#880010,#C8001A);animation:fpw 1.3s cubic-bezier(.4,0,.2,1) .9s both}
+.vp{font-size:8px;width:28px}
+.vg{color:#00ff9d}
+.vr2{color:#C8001A}
+.gx{position:absolute;inset:4px 0 4px 0;pointer-events:none}
+.gl{position:absolute;left:0;right:0;height:1px;background:#0d1014}
+.gv{position:absolute;top:0;bottom:0;right:158px;width:1px;background:#0d1014}
+.dc{position:absolute;right:140px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:space-evenly;padding:8px 0;pointer-events:none}
+.dd{width:3px;height:3px;border-radius:50%;background:#111}
+.dr{background:#C8001A}
 </style>
-
 <div class="w">
-  <!-- Grid -->
-  <div class="grid">
-    <div class="grid-h" style="top:58px"></div>
-    <div class="grid-h" style="top:115px"></div>
-    <div class="grid-h" style="top:175px"></div>
-    <div class="grid-v"></div>
+  <div class="gx">
+    <div class="gl" style="top:55px"></div>
+    <div class="gl" style="top:112px"></div>
+    <div class="gl" style="top:172px"></div>
+    <div class="gv"></div>
   </div>
-
-  <div class="top-strip"></div>
-  <div class="scan"></div>
-
-  <!-- Status panel -->
-  <div class="status-box">
-    <div class="ring-outer">
-      <div class="ring-inner">
-        <div class="ring-dot"></div>
+  <div class="ht"></div>
+  <div class="sc"></div>
+  <div class="dc">
+    <div class="dd"></div><div class="dd"></div><div class="dd"></div>
+    <div class="dd dr"></div><div class="dd"></div><div class="dd"></div><div class="dd"></div>
+  </div>
+  <div class="sb">
+    <div class="sr"><div class="sd"></div></div>
+    <div class="sl">ACTIVO</div>
+  </div>
+  <div class="bd">
+    <div class="r1">
+      <div class="mb">
+        DM
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
       </div>
-    </div>
-    ACTIVO
-  </div>
-
-  <!-- Decorative dots -->
-  <div class="deco-dots">
-    <div class="ddot"></div>
-    <div class="ddot"></div>
-    <div class="ddot"></div>
-    <div class="ddot red"></div>
-    <div class="ddot"></div>
-    <div class="ddot"></div>
-    <div class="ddot"></div>
-  </div>
-
-  <div class="body">
-    <div class="row1">
-      <!-- Monogram -->
-      <div class="mono-box">DM</div>
-
-      <!-- Info -->
       <div>
-        <div class="name">DAVID MENDOZA<span class="cursor">_</span></div>
-        <div class="role">// FULL STACK DEVELOPER</div>
-        <div class="badges">
-          <span class="badge bg"><span class="dot"></span>ONLINE</span>
-          <span class="badge br">DISPONIBLE</span>
-          <span class="badge bw">LARA · VE</span>
-          <span class="badge bw">GRACOSOFT</span>
+        <div class="nm">DAVID MENDOZA<span class="cu">_</span></div>
+        <div class="ro">// FULL STACK DEVELOPER</div>
+        <div class="bg">
+          <span class="bx bg-g"><span class="pd"></span>ONLINE</span>
+          <span class="bx bg-r">DISPONIBLE</span>
+          <span class="bx bg-w">LARA &#xB7; VE</span>
+          <span class="bx bg-w">GRACOSOFT</span>
         </div>
       </div>
     </div>
-
-    <!-- Vitals -->
-    <div style="font-size:7px;letter-spacing:3px;color:#1a2028;margin-bottom:6px">VITALS ──────────────────────────────────────</div>
-    <div class="vitals">
-      <div class="vrow">
-        <span class="vlbl">HP</span>
-        <div class="vtrack"><div class="vbar vhp"></div></div>
-        <span class="vpct g">92%</span>
-      </div>
-      <div class="vrow">
-        <span class="vlbl">XP</span>
-        <div class="vtrack"><div class="vbar vxp"></div></div>
-        <span class="vpct g">Lv4</span>
-      </div>
-      <div class="vrow">
-        <span class="vlbl">PWR</span>
-        <div class="vtrack"><div class="vbar vpwr"></div></div>
-        <span class="vpct r">85%</span>
-      </div>
+    <div class="vt">
+      <div class="vl">VITALS &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</div>
+      <div class="vr"><span class="vn">HP</span><div class="vk"><div class="vh v1"></div></div><span class="vp vg">92%</span></div>
+      <div class="vr"><span class="vn">XP</span><div class="vk"><div class="vh v2"></div></div><span class="vp vg">Lv4</span></div>
+      <div class="vr"><span class="vn">PWR</span><div class="vk"><div class="vh v3"></div></div><span class="vp vr2">85%</span></div>
     </div>
   </div>
-
-  <div class="bot-strip"></div>
+  <div class="hb"></div>
 </div>
 </div>
 </foreignObject>

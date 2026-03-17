@@ -3,7 +3,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.w{width:800px;height:570px;background:#06080a;font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;color:#b8ccd4;position:relative;overflow:hidden}
+.w{width:800px;height:570px;background:#06080a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#b8ccd4;position:relative;overflow:hidden}
 @keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
 .ht{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
 .hb{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
@@ -46,8 +46,8 @@
 <div class="w">
 <div class="ht"></div>
 <div class="bd">
-  <div class="sh">// INVENTARIO <span>— TECH STACK</span>
-    <span class="lg"><span class="ls">S</span> Maestría &nbsp;<span class="la">A</span> Avanzado &nbsp;<span class="lb">B</span> Básico</span>
+  <div class="sh">// INVENTARIO <span>&#x2014; TECH STACK</span>
+    <span class="lg"><span class="ls">S</span>&#x20;Maestría&#x20;&#x20;<span class="la">A</span>&#x20;Avanzado&#x20;&#x20;<span class="lb">B</span>&#x20;Básico</span>
   </div>
   <hr class="dv" />
   <div class="cl cr">BACKEND</div>
