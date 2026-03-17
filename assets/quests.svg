@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="310" viewBox="0 0 800 310">
-<foreignObject x="0" y="0" width="800" height="310">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="320" viewBox="0 0 800 320">
+<foreignObject x="0" y="0" width="800" height="320">
 <div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.w{width:800px;height:310px;background:#06080a;font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;color:#b8ccd4;position:relative;overflow:hidden}
+.w{width:800px;height:320px;background:#06080a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#b8ccd4;position:relative;overflow:hidden}
 @keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
 .ht{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
 .hb{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
@@ -13,36 +13,36 @@
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes b75{from{width:0}to{width:75%}}
 @keyframes b55{from{width:0}to{width:55%}}
-.bd{padding:12px 28px}
-.sh{font-size:9px;letter-spacing:3px;color:#C8001A;margin-bottom:3px}
-.sh span{color:#2a3840}
-.dv{border:none;border-top:1px solid #1a2028;margin-bottom:10px}
-.q{display:flex;align-items:flex-start;gap:12px;padding:8px 13px;border:1px solid #1a2028;border-left:3px solid transparent;margin-bottom:5px;animation:fu .5s ease both}
+.bd{padding:14px 26px}
+.sh{font-size:11px;letter-spacing:3px;color:#C8001A;margin-bottom:3px;font-weight:bold}
+.sh span{color:#3a5060;font-size:10px}
+.dv{border:none;border-top:1px solid #1a2028;margin-bottom:12px}
+.q{display:flex;align-items:flex-start;gap:14px;padding:10px 14px;border:1px solid #1a2028;border-left:3px solid transparent;margin-bottom:6px;animation:fu .5s ease both}
 .qd{border-left-color:#00ff9d;background:rgba(0,255,157,.015)}
 .qp{border-left-color:#FFB800;background:rgba(255,184,0,.012)}
 .ql{border-left-color:#111;opacity:.35}
-.qi{font-size:13px;flex-shrink:0;margin-top:1px}
+.qi{font-size:16px;flex-shrink:0;margin-top:1px}
 .qd .qi{color:#00ff9d}
 .qp .qi{animation:am 1.4s ease-in-out infinite}
 .ql .qi{color:#1a2028}
 .qb{flex:1}
-.qn{font-size:12px;color:#e8f0f4;margin-bottom:3px}
-.qt{font-size:9px;color:#2a3840}
-.qr{display:flex;align-items:center;gap:8px;margin:4px 0 3px}
-.qk{flex:1;height:6px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:200px}
+.qn{font-size:14px;color:#e8f0f4;margin-bottom:4px;font-weight:bold;letter-spacing:.5px}
+.qt{font-size:11px;color:#3a5060;letter-spacing:.5px}
+.qr{display:flex;align-items:center;gap:10px;margin:5px 0 4px}
+.qk{flex:1;height:7px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;max-width:220px}
 .qf{height:100%;background:linear-gradient(90deg,#bb7700,#FFB800);border-radius:1px}
 .f75{animation:b75 1.2s cubic-bezier(.4,0,.2,1) .5s both}
 .f55{animation:b55 1.2s cubic-bezier(.4,0,.2,1) .65s both}
-.qp2{font-size:9px;color:#FFB800}
-.db{float:right;font-size:8px;padding:2px 6px;border:1px solid #00ff9d;color:#00ff9d;background:rgba(0,255,157,.05)}
+.qp2{font-size:10px;color:#FFB800;font-weight:bold}
+.db{float:right;font-size:9px;padding:2px 8px;border:1px solid #00ff9d;color:#00ff9d;background:rgba(0,255,157,.05)}
 .e1{animation-delay:.08s}.e2{animation-delay:.18s}.e3{animation-delay:.28s}.e4{animation-delay:.38s}.e5{animation-delay:.48s}
 .ct{display:flex;gap:8px;align-items:center;margin-top:2px}
-.cb{font-size:9px;letter-spacing:2px;padding:5px 13px;border:1px solid;display:flex;align-items:center;gap:6px;font-family:inherit}
+.cb{font-size:10px;letter-spacing:2px;padding:6px 14px;border:1px solid;display:flex;align-items:center;gap:7px;font-family:inherit;font-weight:bold}
 .cbr{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
 .cbg{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.03)}
-.cd{width:5px;height:5px;border-radius:50%;background:currentColor}
-.sr{margin-left:auto;font-size:8px;color:#2a3840;letter-spacing:2px;display:flex;align-items:center;gap:6px}
-.sd{width:6px;height:6px;border-radius:50%;background:#00ff9d;animation:pu 1.8s ease-in-out infinite;flex-shrink:0}
+.cd{width:6px;height:6px;border-radius:50%;background:currentColor}
+.sr{margin-left:auto;font-size:9px;color:#2a3840;letter-spacing:2px;display:flex;align-items:center;gap:7px}
+.sd{width:7px;height:7px;border-radius:50%;background:#00ff9d;animation:pu 1.8s ease-in-out infinite;flex-shrink:0}
 .cu{animation:bl 1s step-end infinite;color:#C8001A}
 </style>
 <div class="w">
@@ -54,24 +54,24 @@
     <span class="qi">&#x2714;</span>
     <div class="qb">
       <div class="qn">Dominar el Stack Full Stack <span class="db">100%</span></div>
-      <div class="qt">Java · Node.js · React · PostgreSQL — COMPLETADO</div>
+      <div class="qt">Java &#xB7; Node.js &#xB7; React &#xB7; PostgreSQL &#x2014; COMPLETADO</div>
     </div>
   </div>
   <div class="q qd e2">
     <span class="qi">&#x2714;</span>
     <div class="qb">
       <div class="qn">Construir APIs REST escalables <span class="db">100%</span></div>
-      <div class="qt">NestJS + TypeScript + PostgreSQL — COMPLETADO</div>
+      <div class="qt">NestJS + TypeScript + PostgreSQL &#x2014; COMPLETADO</div>
     </div>
   </div>
   <div class="q qp e3">
     <span class="qi">&#x25BA;</span>
     <div class="qb">
-      <div class="qn">Desarrollo Mobile — React Native</div>
+      <div class="qn">Desarrollo Mobile &#x2014; React Native</div>
       <div class="qr">
         <div class="qk"><div class="qf f75"></div></div>
         <span class="qp2">75%</span>
-        <span style="font-size:9px;color:#2a3840">EN PROGRESO</span>
+        <span style="font-size:10px;color:#3a5060">EN PROGRESO</span>
       </div>
     </div>
   </div>
@@ -82,19 +82,19 @@
       <div class="qr">
         <div class="qk"><div class="qf f55"></div></div>
         <span class="qp2">55%</span>
-        <span style="font-size:9px;color:#2a3840">FastAPI · NumPy</span>
+        <span style="font-size:10px;color:#3a5060">FastAPI &#xB7; NumPy</span>
       </div>
     </div>
   </div>
   <div class="q ql e5">
     <span class="qi">&#x25A3;</span>
     <div class="qb">
-      <div class="qn">Deploy en la Nube — AWS / GCP</div>
-      <div class="qt">BLOQUEADO — Requiere nivel 5</div>
+      <div class="qn">Deploy en la Nube &#x2014; AWS / GCP</div>
+      <div class="qt">BLOQUEADO &#x2014; Requiere nivel 5</div>
     </div>
   </div>
   <div style="border-top:1px solid #1a2028;margin:8px 0 8px"></div>
-  <div style="font-size:9px;letter-spacing:2px;color:#C8001A;margin-bottom:7px">// INICIAR COMUNICACION</div>
+  <div style="font-size:10px;letter-spacing:2px;color:#C8001A;margin-bottom:8px;font-weight:bold">// INICIAR COMUNICACION</div>
   <div class="ct">
     <div class="cb cbr"><span class="cd"></span>GITHUB</div>
     <div class="cb cbg"><span class="cd"></span>EMAIL</div>

@@ -1,79 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="570" viewBox="0 0 800 570">
-<foreignObject x="0" y="0" width="800" height="570">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="800" height="620" viewBox="0 0 800 620">
+<foreignObject x="0" y="0" width="800" height="620">
 <div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.w{width:800px;height:570px;background:#06080a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#b8ccd4;position:relative;overflow:hidden}
+.w{width:800px;height:620px;background:#06080a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#b8ccd4;position:relative;overflow:hidden}
 @keyframes hz{from{background-position:0 0}to{background-position:-20px 0}}
 .ht{height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
 .hb{position:absolute;bottom:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#C8001A 0,#C8001A 12px,#06080a 12px,#06080a 20px);background-size:20px 3px;animation:hz .5s linear infinite}
-@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes bar{from{width:0}}
-.bd{padding:12px 28px}
-.sh{font-size:9px;letter-spacing:3px;color:#C8001A;margin-bottom:3px}
-.sh span{color:#2a3840}
-.dv{border:none;border-top:1px solid #1a2028;margin-bottom:10px}
-.lg{font-size:8px;float:right;color:#2a3840;margin-top:-16px}
-.ls{color:#00ff9d}.la{color:#4488ff}.lb{color:#3a5060}
-.cl{display:inline-block;font-size:8px;letter-spacing:2px;padding:2px 8px;border:1px solid;margin-bottom:7px}
-.cr{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.04)}
-.cg{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.03)}
-.cw{border-color:#1a2028;color:#4a6070}
-.tb{width:100%;border-collapse:collapse;margin-bottom:8px}
-.tb tr{border-bottom:1px solid #0d1014;animation:fu .5s ease both}
-.tb tr:nth-child(odd) td{background:#0d1014}
-.tb td{padding:6px 8px;font-size:11px;vertical-align:middle}
-.tn{color:#e8f0f4;width:155px}
-.tt{width:28px;font-size:10px;font-weight:bold}
-.ts{color:#00ff9d}.ta{color:#4488ff}.tb2{color:#4a6070}
-.tc{width:215px}
-.bk{width:200px;height:7px;background:#0a0c0e;border:1px solid #1a2028;border-radius:1px;overflow:hidden;display:block}
-.bf{height:100%;border-radius:1px;animation:bar 1.2s cubic-bezier(.4,0,.2,1) both}
+.bd{padding:14px 24px}
+.sh{font-size:11px;letter-spacing:3px;color:#C8001A;margin-bottom:3px;font-weight:bold}
+.sh span{color:#3a5060;font-size:10px}
+.dv{border:none;border-top:1px solid #1a2028;margin-bottom:14px}
+.sp{border:none;border-top:1px solid #1a2028;margin:10px 0 14px}
+
+/* CATEGORY HEADER */
+.cat{display:flex;align-items:center;gap:10px;margin-bottom:10px;animation:fu .5s ease both}
+.cat-line{flex:1;height:1px;background:linear-gradient(90deg,currentColor,transparent)}
+.cat-label{font-size:11px;letter-spacing:3px;font-weight:bold;padding:3px 12px;border:1px solid}
+.cat-r .cat-label{border-color:#C8001A;color:#C8001A;background:rgba(200,0,26,.06)}
+.cat-r .cat-line{color:#C8001A}
+.cat-g .cat-label{border-color:#00ff9d;color:#00ff9d;background:rgba(0,255,157,.04)}
+.cat-g .cat-line{color:#00ff9d}
+.cat-w .cat-label{border-color:#2a3840;color:#4a6070;background:rgba(42,56,64,.08)}
+.cat-w .cat-line{color:#2a3840}
+
+/* SKILL CARDS GRID */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:4px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:4px}
+
+/* SKILL CARD */
+.card{background:#0d1014;border:1px solid #1a2028;padding:10px 12px;position:relative;animation:fu .5s ease both;transition:border-color .2s}
+.card:hover{border-color:#C8001A}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.card-name{font-size:13px;color:#e8f0f4;font-weight:bold;letter-spacing:.5px}
+.tier{font-size:11px;font-weight:bold;width:20px;height:20px;display:flex;align-items:center;justify-content:center;border:1px solid;border-radius:2px;flex-shrink:0}
+.ts{color:#00ff9d;border-color:#00ff9d;background:rgba(0,255,157,.07)}
+.ta{color:#4488ff;border-color:#4488ff;background:rgba(68,136,255,.07)}
+.tb2{color:#4a6070;border-color:#2a3840;background:rgba(42,56,64,.1)}
+.card-bar-wrap{display:flex;align-items:center;gap:6px}
+.card-track{flex:1;height:5px;background:#06080a;border:1px solid #1a2028;border-radius:1px;overflow:hidden}
+.card-fill{height:100%;border-radius:1px;animation:bar 1.2s cubic-bezier(.4,0,.2,1) both}
 .fr{background:linear-gradient(90deg,#880010,#C8001A)}
 .fb{background:linear-gradient(90deg,#224499,#4488ff)}
 .fd{background:#2a3840}
-.tp{color:#4a6070;font-size:9px;width:36px}
-.sp{border:none;border-top:1px solid #1a2028;margin:6px 0 8px}
-.d01{animation-delay:.08s}.d02{animation-delay:.15s}.d03{animation-delay:.22s}.d04{animation-delay:.29s}.d05{animation-delay:.36s}
-.d06{animation-delay:.43s}.d07{animation-delay:.50s}.d08{animation-delay:.57s}.d09{animation-delay:.64s}.d10{animation-delay:.71s}
-.d11{animation-delay:.78s}.d12{animation-delay:.85s}.d13{animation-delay:.92s}
-.b01{animation-delay:.15s;width:180px}.b02{animation-delay:.22s;width:176px}.b03{animation-delay:.29s;width:160px}
-.b04{animation-delay:.36s;width:140px}.b05{animation-delay:.43s;width:120px}.b06{animation-delay:.50s;width:174px}
-.b07{animation-delay:.57s;width:164px}.b08{animation-delay:.64s;width:170px}.b09{animation-delay:.71s;width:168px}
-.b10{animation-delay:.78s;width:150px}.b11{animation-delay:.85s;width:172px}.b12{animation-delay:.92s;width:184px}
-.b13{animation-delay:.99s;width:156px}
+.card-pct{font-size:9px;color:#4a6070;flex-shrink:0;width:28px;text-align:right}
+.card-tag{position:absolute;top:0;right:0;font-size:7px;letter-spacing:1px;padding:1px 5px;color:#06080a}
+.tag-s{background:#00ff9d}
+.tag-b{background:#C8001A}
+
+/* animation delays for cards */
+.a1{animation-delay:.05s}.a2{animation-delay:.10s}.a3{animation-delay:.15s}.a4{animation-delay:.20s}
+.a5{animation-delay:.25s}.a6{animation-delay:.30s}.a7{animation-delay:.35s}.a8{animation-delay:.40s}
+.a9{animation-delay:.45s}.a10{animation-delay:.50s}.a11{animation-delay:.55s}.a12{animation-delay:.60s}
+.a13{animation-delay:.65s}.a14{animation-delay:.70s}
+.b01{animation-delay:.12s;width:90%}.b02{animation-delay:.17s;width:88%}.b03{animation-delay:.22s;width:80%}
+.b04{animation-delay:.27s;width:70%}.b05{animation-delay:.32s;width:60%}
+.b06{animation-delay:.37s;width:87%}.b07{animation-delay:.42s;width:82%}.b08{animation-delay:.47s;width:85%}
+.b09{animation-delay:.52s;width:84%}.b10{animation-delay:.57s;width:75%}
+.b11{animation-delay:.62s;width:86%}.b12{animation-delay:.67s;width:92%}.b13{animation-delay:.72s;width:78%}
 </style>
 <div class="w">
 <div class="ht"></div>
 <div class="bd">
-  <div class="sh">// INVENTARIO <span>&#x2014; TECH STACK</span>
-    <span class="lg"><span class="ls">S</span>&#x20;Maestría&#x20;&#x20;<span class="la">A</span>&#x20;Avanzado&#x20;&#x20;<span class="lb">B</span>&#x20;Básico</span>
-  </div>
+
+  <div class="sh" style="animation:fu .4s ease .02s both">// INVENTARIO <span>&#x2014; TECH STACK</span></div>
   <hr class="dv" />
-  <div class="cl cr">BACKEND</div>
-  <table class="tb">
-    <tr class="d01"><td class="tn">Java</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b01"></span></span></td><td class="tp">90%</td></tr>
-    <tr class="d02"><td class="tn">Node.js</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b02"></span></span></td><td class="tp">88%</td></tr>
-    <tr class="d03"><td class="tn">NestJS</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b03"></span></span></td><td class="tp">80%</td></tr>
-    <tr class="d04"><td class="tn">Python</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b04"></span></span></td><td class="tp">70%</td></tr>
-    <tr class="d05"><td class="tn">PHP</td><td class="tt tb2">B</td><td class="tc"><span class="bk"><span class="bf fd b05"></span></span></td><td class="tp">60%</td></tr>
-  </table>
+
+  <!-- BACKEND -->
+  <div class="cat cat-r a1">
+    <span class="cat-label">BACKEND</span>
+    <div class="cat-line"></div>
+    <span style="font-size:9px;color:#3a5060;letter-spacing:2px">SERVER SIDE</span>
+  </div>
+  <div class="grid">
+    <div class="card a1">
+      <div class="card-top"><span class="card-name">Java</span><span class="tier ts">S</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fr b01"></div></div><span class="card-pct">90%</span></div>
+    </div>
+    <div class="card a2">
+      <div class="card-top"><span class="card-name">Node.js</span><span class="tier ts">S</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fr b02"></div></div><span class="card-pct">88%</span></div>
+    </div>
+    <div class="card a3">
+      <div class="card-top"><span class="card-name">NestJS</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b03"></div></div><span class="card-pct">80%</span></div>
+    </div>
+    <div class="card a4">
+      <div class="card-top"><span class="card-name">Python</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b04"></div></div><span class="card-pct">70%</span></div>
+    </div>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:8px">
+    <div class="card a5">
+      <div class="card-top"><span class="card-name">PHP</span><span class="tier tb2">B</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fd b05"></div></div><span class="card-pct">60%</span></div>
+    </div>
+    <div style="background:transparent"></div>
+    <div style="background:transparent"></div>
+    <div style="background:transparent"></div>
+  </div>
+
   <hr class="sp" />
-  <div class="cl cg">FRONTEND</div>
-  <table class="tb">
-    <tr class="d06"><td class="tn">React</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b06"></span></span></td><td class="tp">87%</td></tr>
-    <tr class="d07"><td class="tn">TypeScript</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b07"></span></span></td><td class="tp">82%</td></tr>
-    <tr class="d08"><td class="tn">JavaScript</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b08"></span></span></td><td class="tp">85%</td></tr>
-    <tr class="d09"><td class="tn">HTML5 / CSS3</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b09"></span></span></td><td class="tp">84%</td></tr>
-    <tr class="d10"><td class="tn">React Native</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b10"></span></span></td><td class="tp">75%</td></tr>
-  </table>
+
+  <!-- FRONTEND -->
+  <div class="cat cat-g a6">
+    <span class="cat-label">FRONTEND</span>
+    <div class="cat-line"></div>
+    <span style="font-size:9px;color:#3a5060;letter-spacing:2px">CLIENT SIDE</span>
+  </div>
+  <div class="grid">
+    <div class="card a6">
+      <div class="card-top"><span class="card-name">React</span><span class="tier ts">S</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fr b06"></div></div><span class="card-pct">87%</span></div>
+    </div>
+    <div class="card a7">
+      <div class="card-top"><span class="card-name">TypeScript</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b07"></div></div><span class="card-pct">82%</span></div>
+    </div>
+    <div class="card a8">
+      <div class="card-top"><span class="card-name">JavaScript</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b08"></div></div><span class="card-pct">85%</span></div>
+    </div>
+    <div class="card a9">
+      <div class="card-top"><span class="card-name">HTML5/CSS3</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b09"></div></div><span class="card-pct">84%</span></div>
+    </div>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:8px">
+    <div class="card a10">
+      <div class="card-top"><span class="card-name">React Native</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b10"></div></div><span class="card-pct">75%</span></div>
+    </div>
+    <div style="background:transparent"></div>
+    <div style="background:transparent"></div>
+    <div style="background:transparent"></div>
+  </div>
+
   <hr class="sp" />
-  <div class="cl cw">DB &amp; HERRAMIENTAS</div>
-  <table class="tb">
-    <tr class="d11"><td class="tn">PostgreSQL</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b11"></span></span></td><td class="tp">86%</td></tr>
-    <tr class="d12"><td class="tn">Git / GitHub</td><td class="tt ts">S</td><td class="tc"><span class="bk"><span class="bf fr b12"></span></span></td><td class="tp">92%</td></tr>
-    <tr class="d13"><td class="tn">MySQL</td><td class="tt ta">A</td><td class="tc"><span class="bk"><span class="bf fb b13"></span></span></td><td class="tp">78%</td></tr>
-  </table>
+
+  <!-- DB & TOOLS -->
+  <div class="cat cat-w a11">
+    <span class="cat-label">DB &amp; TOOLS</span>
+    <div class="cat-line"></div>
+    <span style="font-size:9px;color:#3a5060;letter-spacing:2px">DATA LAYER</span>
+  </div>
+  <div class="grid3">
+    <div class="card a11">
+      <div class="card-top"><span class="card-name">PostgreSQL</span><span class="tier ts">S</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fr b11"></div></div><span class="card-pct">86%</span></div>
+    </div>
+    <div class="card a12">
+      <div class="card-top"><span class="card-name">Git / GitHub</span><span class="tier ts">S</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fr b12"></div></div><span class="card-pct">92%</span></div>
+    </div>
+    <div class="card a13">
+      <div class="card-top"><span class="card-name">MySQL</span><span class="tier ta">A</span></div>
+      <div class="card-bar-wrap"><div class="card-track"><div class="card-fill fb b13"></div></div><span class="card-pct">78%</span></div>
+    </div>
+  </div>
+
 </div>
 <div class="hb"></div>
 </div>
