@@ -1,0 +1,141 @@
+<svg width="800" height="560" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.mono{font-family:'Share Tech Mono','Courier New',monospace}.orb{font-family:'Orbitron','Share Tech Mono',monospace}</style>
+  </defs>
+
+  <!-- BG -->
+  <rect width="800" height="560" fill="#06080a"/>
+  <!-- Section title -->
+  <text x="32" y="38" class="mono" font-size="10" fill="#C8001A" letter-spacing="2">// INVENTARIO — TECH STACK</text>
+  <line x1="32" y1="46" x2="768" y2="46" stroke="#1a2028" stroke-width="1"/>
+
+  <!-- ── BACKEND ── -->
+  <rect x="32" y="58" width="90" height="16" fill="none" stroke="#1a2028" stroke-width="1"/>
+  <text x="77" y="66" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#6a8090" letter-spacing="2">BACKEND</text>
+
+  <!-- Table header -->
+  <text x="55"  y="90" class="mono" font-size="9" fill="#3a5060" letter-spacing="1">MÓDULO</text>
+  <text x="210" y="90" class="mono" font-size="9" fill="#3a5060" letter-spacing="1">TIER</text>
+  <text x="260" y="90" class="mono" font-size="9" fill="#3a5060" letter-spacing="1">NIVEL</text>
+  <line x1="32" y1="96" x2="520" y2="96" stroke="#1a2028" stroke-width="0.5"/>
+
+  <!-- Java -->
+  <rect x="32" y="100" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="100" width="2" height="28" fill="#C8001A"/>
+  <text x="55" y="114" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">Java</text>
+  <text x="215" y="114" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d">S</text>
+  <rect x="255" y="108" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="108" width="180" height="8" fill="#C8001A" opacity="0.9"/>
+  <text x="462" y="114" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">90%</text>
+
+  <!-- Node.js -->
+  <rect x="32" y="130" width="488" height="28" fill="#06080a"/>
+  <rect x="32" y="130" width="2" height="28" fill="#C8001A"/>
+  <text x="55" y="144" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">Node.js</text>
+  <text x="215" y="144" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d">S</text>
+  <rect x="255" y="138" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="138" width="176" height="8" fill="#C8001A" opacity="0.9"/>
+  <text x="462" y="144" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">88%</text>
+
+  <!-- NestJS -->
+  <rect x="32" y="158" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="158" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="172" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">NestJS</text>
+  <text x="215" y="172" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="166" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="166" width="160" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="172" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">80%</text>
+
+  <!-- Python -->
+  <rect x="32" y="186" width="488" height="28" fill="#06080a"/>
+  <rect x="32" y="186" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="200" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">Python</text>
+  <text x="215" y="200" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="194" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="194" width="140" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="200" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">70%</text>
+
+  <!-- PHP -->
+  <rect x="32" y="214" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="214" width="2" height="28" fill="#3a5060"/>
+  <text x="55" y="228" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">PHP</text>
+  <text x="215" y="228" dominant-baseline="central" class="mono" font-size="11" fill="#6a8090">B</text>
+  <rect x="255" y="222" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="222" width="120" height="8" fill="#3a5060" opacity="0.9"/>
+  <text x="462" y="228" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">60%</text>
+
+  <line x1="32" y1="250" x2="768" y2="250" stroke="#1a2028" stroke-width="1"/>
+
+  <!-- ── FRONTEND ── -->
+  <rect x="32" y="262" width="90" height="16" fill="none" stroke="#1a2028" stroke-width="1"/>
+  <text x="77" y="270" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#6a8090" letter-spacing="2">FRONTEND</text>
+
+  <!-- React -->
+  <rect x="32" y="290" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="290" width="2" height="28" fill="#C8001A"/>
+  <text x="55" y="304" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">React</text>
+  <text x="215" y="304" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d">S</text>
+  <rect x="255" y="298" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="298" width="174" height="8" fill="#C8001A" opacity="0.9"/>
+  <text x="462" y="304" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">87%</text>
+
+  <!-- TypeScript -->
+  <rect x="32" y="318" width="488" height="28" fill="#06080a"/>
+  <rect x="32" y="318" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="332" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">TypeScript</text>
+  <text x="215" y="332" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="326" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="326" width="164" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="332" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">82%</text>
+
+  <!-- JavaScript -->
+  <rect x="32" y="346" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="346" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="360" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">JavaScript</text>
+  <text x="215" y="360" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="354" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="354" width="170" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="360" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">85%</text>
+
+  <!-- React Native -->
+  <rect x="32" y="374" width="488" height="28" fill="#06080a"/>
+  <rect x="32" y="374" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="388" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">React Native</text>
+  <text x="215" y="388" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="382" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="382" width="150" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="388" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">75%</text>
+
+  <line x1="32" y1="410" x2="768" y2="410" stroke="#1a2028" stroke-width="1"/>
+
+  <!-- ── DB & TOOLS ── -->
+  <rect x="32" y="422" width="140" height="16" fill="none" stroke="#1a2028" stroke-width="1"/>
+  <text x="102" y="430" text-anchor="middle" dominant-baseline="central" class="mono" font-size="8" fill="#6a8090" letter-spacing="2">DB &amp; HERRAMIENTAS</text>
+
+  <!-- PostgreSQL -->
+  <rect x="32" y="450" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="450" width="2" height="28" fill="#C8001A"/>
+  <text x="55" y="464" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">PostgreSQL</text>
+  <text x="215" y="464" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d">S</text>
+  <rect x="255" y="458" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="458" width="172" height="8" fill="#C8001A" opacity="0.9"/>
+  <text x="462" y="464" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">86%</text>
+
+  <!-- Git -->
+  <rect x="32" y="478" width="488" height="28" fill="#06080a"/>
+  <rect x="32" y="478" width="2" height="28" fill="#C8001A"/>
+  <text x="55" y="492" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">Git / GitHub</text>
+  <text x="215" y="492" dominant-baseline="central" class="mono" font-size="11" fill="#00ff9d">S</text>
+  <rect x="255" y="486" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="486" width="184" height="8" fill="#C8001A" opacity="0.9"/>
+  <text x="462" y="492" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">92%</text>
+
+  <!-- MySQL -->
+  <rect x="32" y="506" width="488" height="28" fill="#0d1014"/>
+  <rect x="32" y="506" width="2" height="28" fill="#4488ff"/>
+  <text x="55" y="520" dominant-baseline="central" class="mono" font-size="11" fill="#e8f0f4">MySQL</text>
+  <text x="215" y="520" dominant-baseline="central" class="mono" font-size="11" fill="#4488ff">A</text>
+  <rect x="255" y="514" width="200" height="8" fill="#1a2028"/>
+  <rect x="255" y="514" width="156" height="8" fill="#4488ff" opacity="0.8"/>
+  <text x="462" y="520" dominant-baseline="central" class="mono" font-size="10" fill="#b8ccd4">78%</text>
+</svg>
