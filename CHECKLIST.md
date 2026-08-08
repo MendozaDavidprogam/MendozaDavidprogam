@@ -1,43 +1,97 @@
-# Checklist de despliegue
+# 📋 Guía de Configuración del Perfil
 
-## Archivos entregados
-- `assets/dark.svg` y `assets/light.svg` → tu banner animado (retrato con dithering + morph de logos React/Node/`</>`)
-- `README.md` → listo para pegar en tu repo `MendozaDavidprogam/MendozaDavidprogam`
-- `snake.yml` → workflow del snake de contribuciones
+## ✅ Estado Actual
 
-## Pasos manuales (en orden)
+### Archivos Actualizados
+- ✅ `README.md` — Rediseñado con UI/UX Pro Max
+- ✅ `assets/dark.svg` y `assets/light.svg` — Banner animado
+- ✅ `assets/stack.svg` y `assets/quests.svg` — Visualizaciones
+- ✅ `.github/workflows/snake.yml` — Workflow configurado
 
-1. **Sube los SVG del banner**
-   Repo → `assets/` → Add file → Upload files → sube `dark.svg` y `light.svg` (no reemplaces `stack.svg` ni `quests.svg`, esos ya los tienes).
+### Información Personal Actualizada
+- 📍 Ubicación: Barquisimeto, Venezuela
+- 🎓 Carrera: Programador Full-Stack & Análisis de Sistemas (En Progreso)
+- 🌐 Portfolio: https://portafolio-indol-eight.vercel.app
+- 📧 Email: mendozadavidprogramacion2.0@gmail.com
 
-2. **Reemplaza tu README.md**
-   Pega el contenido del `README.md` entregado en la raíz de tu repo.
+## 🎨 Mejoras Aplicadas
 
-3. **Auto-aloja las stats (evita el "API rate limit exceeded")**
-   - `github.com/settings/tokens` → Tokens (classic) → Generate new (classic) → scope `repo` → sin expiración → copia el token (solo se muestra una vez, nunca lo pegues en ningún chat ni repo público)
-   - Fork de `anuraghazra/github-readme-stats`
-   - `vercel.com` → sign up con GitHub → plan Hobby (gratis) → Add New → Project → importa tu fork
-   - Environment Variables → `PAT_1` = tu token → Deploy
-   - Copia tu URL (`algo.vercel.app`) y reemplaza **todas** las apariciones de `YOUR-INSTANCE` en el `README.md`
+### Diseño Visual
+- ✨ Layout mejorado con mejor jerarquía visual
+- 🎯 Paleta de colores consistente (#C8001A, #00FF9D, #0D1117)
+- 📱 Diseño responsive y moderno
+- 🌙 Soporte completo para dark/light mode
 
-4. **Activa permisos de Actions** (para el snake)
-   Tu repo → Settings (del repo, no de tu cuenta) → Actions → General → Workflow permissions → **Read and write permissions** → Save
+### Funcionalidad
+- 📊 GitHub Stats ahora usando el servicio público de Vercel
+- 📈 Top Languages optimizado para mejor visualización
+- 🔥 Streak Stats con tema personalizado
+- 🐍 Snake animation funcional
 
-5. **Sube el workflow del snake**
-   Crea el archivo `.github/workflows/snake.yml` (la ruta con carpetas es literal) y pega el contenido de `snake.yml`. Al hacer commit a `main`, revisa la pestaña Actions — debe ponerse verde en ~1 minuto y crear la rama `output`.
-   El bloque del snake en el README ya apunta a esa rama — no lo actives/verifiques hasta que el Action haya corrido al menos una vez, o se verá roto.
+### Estructura
+- 📝 Secciones claramente definidas
+- 🎯 Información "About Me" destacada
+- 💼 Enlaces de contacto prominentes
+- 📊 Estadísticas en formato tabla para mejor visualización
 
-6. **Completa los campos pendientes**
-   El banner tiene varios valores marcados como `— agrega tu ... —` (Origin, Education, Portfolio, LinkedIn, Facebook). Para editarlos tendría que regenerar el SVG — dime los datos reales y te entrego una versión actualizada.
+## 🔧 Pasos de Verificación
 
-7. **Badges**
-   Reemplaza `TU-USUARIO` en el badge de LinkedIn por tu handle real. El badge de LinkedIn debe quedarse en azul de marca (`#0A66C2`) — es un bug conocido de shields.io, si le cambias el color el logo desaparece.
+### 1. Verifica GitHub Actions
+```bash
+# Revisa que el workflow del snake esté activo
+# Ve a: https://github.com/MendozaDavidprogam/MendozaDavidprogam/actions
+```
+- Debe haber al menos una ejecución exitosa (check verde)
+- Esto genera la rama `output` con los SVG del snake
 
-## Si algo "no cambia"
-Casi siempre es caché del CDN, no un bug:
-- Abre `https://raw.githubusercontent.com/.../archivo.svg?v=999` (el `?v=` fuerza a saltarse la caché)
-- Revisa que estás viendo el tema correcto (dark.svg solo se ve en modo oscuro de GitHub)
-- Confirma que el Action corrió después de tu cambio (pestaña Actions, debe estar en verde)
+### 2. Verifica las Estadísticas
+Las estadísticas ahora usan el servicio público `github-readme-stats.vercel.app`:
+- ✅ No requiere auto-hosting
+- ✅ No requiere token personal
+- ✅ Funciona inmediatamente
+- ⚠️ Puede tener límites de rate si hay mucho tráfico (poco probable para perfiles individuales)
 
-## Nota sobre el tamaño de archivo
-`light.svg` pesa ~1.4MB (el modo claro mantiene el fondo de la foto, generando más puntos que el modo oscuro con fondo segmentado, ~860KB). Ambos están dentro de rangos normales para este tipo de banner, pero si te preocupa el peso, puedo reducir la densidad de puntos.
+### 3. Actualiza el Banner (Opcional)
+Si quieres actualizar los campos del banner animado (dark.svg / light.svg):
+- Origin: Venezuela - Barquisimeto
+- Education: Full-Stack Developer & Systems Analysis
+- Portfolio: https://portafolio-indol-eight.vercel.app
+
+## 🐛 Solución de Problemas
+
+### Las estadísticas no se ven
+**Solucionado:** Ahora usan URLs públicas con tema `radical` y configuración consistente.
+
+### El snake no aparece
+1. Ve a Settings → Actions → General
+2. Workflow permissions → "Read and write permissions"
+3. Ejecuta el workflow manualmente: Actions → Generate Snake Animation → Run workflow
+
+### Caché de imágenes
+Si los cambios no se ven:
+```
+https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/README.md?v=1
+```
+Agrega `?v=1` (o cualquier número) para forzar actualización.
+
+## 🎯 Próximos Pasos Opcionales
+
+1. **Personalizar el banner**
+   - Actualizar los SVG con tu información exacta
+   - Ajustar colores si lo prefieres
+
+2. **Agregar más badges**
+   - Tecnologías específicas que domines
+   - Certificaciones
+
+3. **Expandir proyectos**
+   - Destacar proyectos importantes con pins
+   - Agregar sección de proyectos destacados
+
+## 📝 Notas Importantes
+
+- ✅ LinkedIn y Facebook removidos según solicitado
+- ✅ Portfolio agregado como enlace principal
+- ✅ Diseño optimizado para atraer reclutadores
+- ✅ Información profesional y clara
+- ✅ Colores vibrantes pero profesionales
