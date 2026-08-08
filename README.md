@@ -1,12 +1,12 @@
 <div align="center">
 
 # David Mendoza
-### Full-Stack Developer & Systems Analyst
+### Full-Stack Developer & Analista de Sistemas
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/light.svg">
-  <img alt="David Mendoza — Full-Stack Developer" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/light.svg" width="100%">
+  <img alt="David Mendoza — Full-Stack Developer" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg" width="100%">
 </picture>
 
 <br/>
@@ -16,7 +16,7 @@ const developer = {
   name: "David Mendoza",
   location: "Barquisimeto, Venezuela 🇻🇪",
   role: "Full-Stack Developer",
-  education: "Systems Analysis (In Progress)",
+  education: "Analista de Sistemas (En Progreso)",
   portfolio: "https://portafolio-indol-eight.vercel.app",
   focus: ["Web Development", "System Design", "Problem Solving"],
   currentlyLearning: ["Advanced React Patterns", "Cloud Architecture"]
@@ -27,15 +27,15 @@ const developer = {
 
 <br/>
 
-## 🎯 About Me
+## 🎯 Sobre Mí
 
-Passionate full-stack developer from Barquisimeto, Venezuela, specializing in building modern web applications and system solutions. Currently pursuing Systems Analysis while actively developing real-world projects.
+Desarrollador full-stack de Barquisimeto, Venezuela, enfocado en construir aplicaciones web modernas y soluciones de sistemas. Actualmente cursando Análisis de Sistemas mientras desarrollo proyectos reales.
 
-🔗 **[View My Portfolio](https://portafolio-indol-eight.vercel.app)**
+🔗 **[Ver mi Portafolio](https://portafolio-indol-eight.vercel.app)**
 
 <br/>
 
-## 📊 GitHub Activity
+## 📊 Actividad en GitHub
 
 <div align="center">
 
@@ -60,6 +60,9 @@ Passionate full-stack developer from Barquisimeto, Venezuela, specializing in bu
 </td>
 </tr>
 </table>
+
+<sub>Si alguna tarjeta no carga a la primera, refresca — el servicio público de <code>github-readme-stats</code> a veces tarda unos segundos en la primera visita.</sub>
+
 </div>
 
 <br/>
@@ -74,17 +77,17 @@ Passionate full-stack developer from Barquisimeto, Venezuela, specializing in bu
 
 <br/>
 
-## 🚀 Projects & Contributions
+## 🚀 Proyectos Destacados
 
 <div align="center">
 
-<img src="./assets/quests.svg" width="100%" alt="Projects Overview"/>
+<img src="./assets/quests.svg" width="100%" alt="Proyectos Destacados"/>
 
 </div>
 
 <br/>
 
-## 📈 Contribution Graph
+## 📈 Gráfico de Contribuciones
 
 <div align="center">
 
@@ -98,7 +101,7 @@ Passionate full-stack developer from Barquisimeto, Venezuela, specializing in bu
 
 <br/>
 
-## 💼 Let's Connect
+## 💼 Conectemos
 
 <div align="center">
 
