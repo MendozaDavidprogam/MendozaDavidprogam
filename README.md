@@ -1,134 +1,76 @@
+<!-- ═══════════════════════════════════════════════════════
+     DAVID MENDOZA — README.md FINAL
+     github.com/MendozaDavidprogam
+     Estructura:
+       README.md  ← raíz del repo
+       assets/
+         header.svg
+         stack.svg
+         quests.svg
+     ═══════════════════════════════════════════════════════ -->
+
 <div align="center">
-
-# David Mendoza
-### Full-Stack Developer & Analista de Sistemas
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/light.svg">
-  <img alt="David Mendoza — Full-Stack Developer" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg" width="100%">
-</picture>
-
-<br/>
-
-```javascript
-const developer = {
-  name: "David Mendoza",
-  location: "Barquisimeto, Venezuela 🇻🇪",
-  role: "Full-Stack Developer",
-  education: "Analista de Sistemas (En Progreso)",
-  portfolio: "https://portafolio-indol-eight.vercel.app",
-  focus: ["Web Development", "System Design", "Problem Solving"],
-  currentlyLearning: ["Advanced React Patterns", "Cloud Architecture"]
-};
-```
-
+<img src="./assets/header.svg" width="100%" alt="David Mendoza — Full Stack Developer"/>
 </div>
 
-<br/>
+<br>
 
-## 🎯 Sobre Mí
+---
 
-Desarrollador full-stack de Barquisimeto, Venezuela, enfocado en construir aplicaciones web modernas y soluciones de sistemas. Actualmente cursando Análisis de Sistemas mientras desarrollo proyectos reales.
+## `// ESTADÍSTICAS DEL SISTEMA`
 
-🔗 **[Ver mi Portafolio](https://portafolio-indol-eight.vercel.app)**
-
-<br/>
-
-## 📊 Actividad en GitHub
+<br>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=MendozaDavidprogam&theme=radical&hide_border=true&background=0D1117&stroke=C8001A&ring=00FF9D&fire=C8001A&currStreakLabel=00FF9D&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=7D8590&card_width=500" alt="GitHub Streak" />
+<!-- Stats reales de tu GitHub -->
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=MendozaDavidprogam&show_icons=true&count_private=true&include_all_commits=true&hide_border=false&bg_color=06080a&title_color=C8001A&icon_color=00ff9d&text_color=c8d8e0&border_color=1a2028&rank_icon=github&custom_title=david_mendoza%27s+GitHub+Stats" alt="GitHub Stats"/>
+&nbsp;
+<!-- Lenguajes reales de tus repos -->
+<img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MendozaDavidprogam&layout=compact&count_private=true&hide_border=false&bg_color=06080a&title_color=C8001A&text_color=c8d8e0&border_color=1a2028&langs_count=8&custom_title=Lenguajes+Más+Usados" alt="Top Languages"/>
 
 </div>
 
-<br/>
-
-<div align="center">
-<table>
-<tr>
-<td width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api?username=MendozaDavidprogam&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=C8001A&icon_color=00FF9D&text_color=E6EDF3&hide_rank=true&include_all_commits=true&count_private=true" alt="GitHub Stats" width="100%" />
-
-</td>
-<td width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MendozaDavidprogam&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=C8001A&text_color=E6EDF3&langs_count=8" alt="Top Languages" width="100%" />
-
-</td>
-</tr>
-</table>
-
-<sub>Si alguna tarjeta no carga a la primera, refresca — el servicio público de <code>github-readme-stats</code> a veces tarda unos segundos en la primera visita.</sub>
-
-</div>
-
-<br/>
-
-## 🛠️ Tech Stack
+<br>
 
 <div align="center">
 
-<img src="./assets/stack.svg" width="100%" alt="Tech Stack"/>
+<!-- Streak real de commits -->
+<img width="70%" src="https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=06080a&ring=C8001A&fire=C8001A&currStreakLabel=00ff9d&sideLabels=c8d8e0&border=1a2028&dates=3a5060&stroke=C8001A&hide_border=false" alt="GitHub Streak"/>
 
 </div>
 
-<br/>
-
-## 🚀 Proyectos Destacados
+<br>
 
 <div align="center">
 
-<img src="./assets/quests.svg" width="100%" alt="Proyectos Destacados"/>
+<!-- Gráfica de contribuciones real -->
+[![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=MendozaDavidprogam&bg_color=06080a&color=c8d8e0&line=C8001A&point=00ff9d&area=true&area_color=C8001A&hide_border=false&border_color=1a2028&title_color=C8001A&custom_title=david_mendoza%27s+Contribution+Graph)](https://github.com/MendozaDavidprogam)
 
 </div>
 
-<br/>
-
-## 📈 Gráfico de Contribuciones
+---
 
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/output/github-snake.svg" />
-  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/output/github-snake-dark.svg" width="100%" />
-</picture>
-
+<img src="./assets/stack.svg" width="100%" alt="Inventario — Tech Stack"/>
 </div>
 
-<br/>
-
-## 💼 Conectemos
+---
 
 <div align="center">
-
-<a href="https://github.com/MendozaDavidprogam">
-  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00FF9D&labelColor=0D1117" alt="GitHub"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://portafolio-indol-eight.vercel.app">
-  <img src="https://img.shields.io/badge/Portfolio-C8001A?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0D1117" alt="Portfolio"/>
-</a>
-&nbsp;&nbsp;
-<a href="mailto:mendozadavidprogramacion2.0@gmail.com">
-  <img src="https://img.shields.io/badge/Email-00FF9D?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=0D1117" alt="Email"/>
-</a>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=for-the-badge&color=C8001A&labelColor=0D1117&label=Profile+Views" alt="Profile Views"/>
-
+<img src="./assets/quests.svg" width="100%" alt="Registro de Misiones"/>
 </div>
-
-<br/>
 
 ---
 
 <div align="center">
 
-*"Building the future, one commit at a time"* 💻✨
+[![GitHub](https://img.shields.io/badge/%E2%96%BA%20GITHUB-MendozaDavidprogam-C8001A?style=for-the-badge&logo=github&logoColor=C8001A&labelColor=06080a)](https://github.com/MendozaDavidprogam)
+&nbsp;
+[![Email](https://img.shields.io/badge/%E2%96%BA%20EMAIL-CONTACTAR-00ff9d?style=for-the-badge&logo=gmail&logoColor=00ff9d&labelColor=06080a)](mailto:mendozadavidprogramacion2.0@gmail.com)
+
+<br>
+
+![Profile Views](https://komarev.com/ghpvc/?username=MendozaDavidprogam&style=flat-square&color=C8001A&labelColor=06080a&label=VISITAS)
 
 </div>
