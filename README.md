@@ -1,16 +1,16 @@
 <!-- ═══════════════════════════════════════════════════════
      DAVID MENDOZA — README.md
      github.com/MendozaDavidprogam
-     assets/dark.svg · assets/light.svg · assets/stack.svg
-     assets/quests.svg · assets/stats.svg
+     assets/dark.gif · assets/light.gif (banner animado)
+     assets/stack.svg · assets/quests.svg · assets/stats.svg
      ═══════════════════════════════════════════════════════ -->
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/light.svg">
-  <img alt="David Mendoza — Full-Stack Developer" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/light.gif">
+  <img alt="David Mendoza — Full-Stack Developer" src="https://raw.githubusercontent.com/MendozaDavidprogam/MendozaDavidprogam/main/assets/dark.gif" width="100%">
 </picture>
 
 </div>
