@@ -37,8 +37,6 @@ Desarrollador full-stack de **Barquisimeto, Venezuela**, enfocado en construir a
 <img width="100%" src="https://streak-stats.demolab.com?user=MendozaDavidprogam&theme=dark&background=06080a&ring=C8001A&fire=C8001A&currStreakLabel=00ff9d&sideLabels=c8d8e0&border=1a2028&dates=3a5060&stroke=C8001A&hide_border=false" alt="GitHub Streak"/>
 </div>
 
-<sub align="center">Si esta tarjeta de racha no carga, es un servicio público externo con límite de peticiones — la tarjeta de arriba (`stats.svg`) es autosuficiente y no depende de nadie.</sub>
-
 <br><br>
 
 ## `// TECH STACK`
